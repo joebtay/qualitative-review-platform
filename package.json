@@ -1,0 +1,12 @@
+{
+  "name": "qualitative-review-platform",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs tests/sync.test.mjs tests/assign.test.mjs tests/passages.test.mjs tests/features.test.mjs tests/pdfloc.test.mjs tests/settings.test.mjs tests/themes.test.mjs tests/service.test.mjs tests/reviews.test.mjs",
+    "site": "node cloudflare/build.mjs",
+    "demo": "python3 tools/make_demo.py",
+    "serve": "python3 -m http.server 8765 --directory app"
+  }
+}

@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Full-text screening</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#f4f6f9;font-family:"IBM Plex Sans",system-ui,sans-serif;color:#141922}
+a{color:#1c5cab}a:hover{color:#123f78}
+button{font:inherit;cursor:pointer}
+input,select,textarea{font:inherit}
+</style>
+</helmet>
+<div style="min-height: 1000px; display: flex; flex-direction: column; background: #f4f6f9; font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #141922">
+
+<header style="background: #ffffff; border-bottom: 1px solid #dfe3ea; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px">
+<div style="display: flex; align-items: center; gap: 10px">
+<div style="width: 28px; height: 28px; border-radius: 6px; background: #141922; display: grid; place-items: center">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#ffffff" stroke-width="1.6" aria-hidden="true"><path d="M3 4h10M3 8h6M3 12h8"></path></svg>
+</div>
+<div>
+<div style="font-weight: 700; font-size: 15px; letter-spacing: -0.01em">Review Coder</div>
+<div style="font-size: 12px; color: #5d6675">Cognitive impairment · review of reviews</div>
+</div>
+</div>
+<nav aria-label="Workspace" style="display: flex; gap: 4px; flex-wrap: wrap">
+<a href="Project.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Project</a>
+<a href="Document.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Documents</a>
+<a href="Screen.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; background: #141922; color: #ffffff; font-size: 14px; font-weight: 500">Screen</a>
+<a href="Main.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Code</a>
+<a href="Verify.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Verify</a>
+<a href="Agreement.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Agreement</a>
+<a href="Overview.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Overview</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 20px; margin-left: auto; flex-wrap: wrap">
+<div style="min-width: 170px">
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #465062"><span>Full texts you have screened</span><b style="color: #141922">12 / 35</b></div>
+<div style="height: 6px; background: #edf0f5; border-radius: 3px; margin-top: 4px"><div style="width: 34%; height: 6px; background: #2a78d6; border-radius: 3px"></div></div>
+</div>
+<a href="Agreement.dc.html" style="font-size: 12px; text-decoration: none; color: #8a3a12; background: #fde7dc; border: 1px solid #f0b79b; border-radius: 999px; padding: 4px 10px">2 conflicts to resolve</a>
+<div style="display: flex; align-items: center; gap: 6px; font-size: 12px; color: #1f6b4c; background: #e6f6ef; border: 1px solid #b7e3cf; border-radius: 999px; padding: 4px 10px">
+<span style="width: 7px; height: 7px; border-radius: 50%; background: #1baf7a"></span>Saved · synced to GitHub
+</div>
+<div style="display: flex; align-items: center; gap: 8px">
+<div style="width: 30px; height: 30px; border-radius: 50%; background: #2a78d6; color: #ffffff; display: grid; place-items: center; font-size: 12px; font-weight: 600">JT</div>
+<span style="font-size: 13px; color: #465062">Coder 1</span>
+</div>
+</div>
+</header>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px; padding: 16px 24px 24px; align-items: flex-start">
+
+<aside aria-label="Screening queue" style="flex: 1 1 250px; max-width: 290px; min-width: 0; background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 14px">
+<h2 style="margin: 0; font-size: 14px; font-weight: 600">Full texts</h2>
+<p style="margin: 4px 0 10px; font-size: 12px; color: #5d6675; line-height: 1.4">Every report is screened by two people independently. Claude's pass is a third view.</p>
+<div style="display: flex; gap: 6px; flex-wrap: wrap">
+<button type="button" style="border: 1px solid #2a78d6; background: #2a78d6; color: #ffffff; border-radius: 999px; padding: 3px 10px; font-size: 12px">To screen · 23</button>
+<button type="button" style="border: 1px solid #dfe3ea; background: #ffffff; color: #465062; border-radius: 999px; padding: 3px 10px; font-size: 12px">Done · 12</button>
+<button type="button" style="border: 1px solid #dfe3ea; background: #ffffff; color: #465062; border-radius: 999px; padding: 3px 10px; font-size: 12px">Conflicts · 2</button>
+</div>
+<div style="margin-top: 12px; display: flex; flex-direction: column; gap: 2px">
+<sc-for list="{{queue}}" as="q" hint-placeholder-count="9">
+<button type="button" style="{{q.rowStyle}}">
+<div style="display: flex; justify-content: space-between; gap: 8px; align-items: baseline">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #465062">{{q.id}}</span>
+<span style="{{q.chip}}">{{q.status}}</span>
+</div>
+<div style="font-size: 13px; margin-top: 2px; line-height: 1.3">{{q.title}}</div>
+</button>
+</sc-for>
+</div>
+</aside>
+
+<main style="flex: 999 1 520px; min-width: 0; background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px">
+<div style="padding: 14px 22px; border-bottom: 1px solid #dfe3ea; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between">
+<div style="min-width: 0">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5d6675">F14 · [Author Year] · 22 pp.</div>
+<h1 style="margin: 2px 0 0; font-size: 18px; font-weight: 600; line-height: 1.3">[Report title]: neurocognitive function in adults with severe mental illness, a systematic review</h1>
+</div>
+<a href="#" style="text-decoration: none; border: 1px solid #dfe3ea; color: #141922; border-radius: 6px; padding: 7px 12px; font-size: 13px">Open PDF</a>
+</div>
+
+<div style="padding: 10px 22px; display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 12px; color: #465062; border-bottom: 1px solid #edf0f5; background: #f9fafc">
+<span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 18px; height: 10px; border-radius: 2px; background: rgba(42,120,214,0.25)"></span>C1 Design</span>
+<span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 18px; height: 10px; border-radius: 2px; background: rgba(74,58,167,0.22)"></span>C2 Population</span>
+<span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 18px; height: 10px; border-radius: 2px; background: rgba(235,104,52,0.22)"></span>C3 Outcome</span>
+<span>Highlights are the passages Claude cites for each criterion.</span>
+</div>
+
+<article style="padding: 20px 28px 28px; font-family: 'IBM Plex Serif', Georgia, serif; font-size: 16px; line-height: 1.75; color: #1d2430; max-width: 74ch">
+<div style="font-family: 'IBM Plex Sans', sans-serif; font-size: 12px; color: #5d6675; margin-bottom: 6px">p. 3 · Methods</div>
+<p style="margin: 0 0 16px"><mark style="background: rgba(42,120,214,0.25); color: inherit; padding: 2px 0; border-radius: 2px">We searched six databases from inception and followed PRISMA 2020. Two reviewers screened records independently and pooled estimates with a random-effects model.</mark> Risk of bias was assessed with a modified Newcastle–Ottawa scale.</p>
+<div style="font-family: 'IBM Plex Sans', sans-serif; font-size: 12px; color: #5d6675; margin-bottom: 6px">p. 4 · Eligibility</div>
+<p style="margin: 0 0 16px"><mark style="background: rgba(74,58,167,0.22); color: inherit; padding: 2px 0; border-radius: 2px">Studies enrolled adults with a diagnosis of schizophrenia, bipolar disorder or major depression. Housing status was recorded in a minority of studies, and those experiencing homelessness were not analysed separately.</mark></p>
+<div style="font-family: 'IBM Plex Sans', sans-serif; font-size: 12px; color: #5d6675; margin-bottom: 6px">p. 9 · Results</div>
+<p style="margin: 0"><mark style="background: rgba(235,104,52,0.22); color: inherit; padding: 2px 0; border-radius: 2px">Deficits in processing speed, working memory and executive function were reported across diagnoses, measured with standardised neuropsychological batteries.</mark></p>
+</article>
+</main>
+
+<aside aria-label="Eligibility decision" style="flex: 1 1 360px; max-width: 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h2 style="margin: 0; font-size: 14px; font-weight: 600">Eligibility criteria</h2>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5d6675">Protocol v1.0</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; margin-top: 12px">
+<sc-for list="{{criteria}}" as="c" hint-placeholder-count="4">
+<div style="border: 1px solid #dfe3ea; border-radius: 8px; padding: 10px 12px">
+<div style="display: flex; gap: 8px; align-items: baseline">
+<span style="{{c.tag}}">{{c.id}}</span>
+<span style="font-size: 13px; font-weight: 600">{{c.name}}</span>
+</div>
+<div style="font-size: 12px; color: #5d6675; margin-top: 3px; line-height: 1.4">{{c.rule}}</div>
+<div style="display: flex; align-items: center; gap: 8px; margin-top: 8px; font-size: 12px; color: #465062">
+<span>Claude:</span><span style="{{c.claudeStyle}}">{{c.claude}}</span><a href="#" style="font-size: 12px">{{c.page}}</a>
+</div>
+<div role="group" aria-label="{{c.aria}}" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; margin-top: 8px">
+<button type="button" style="{{c.met}}">Met</button>
+<button type="button" style="{{c.notmet}}">Not met</button>
+<button type="button" style="{{c.unclear}}">Unclear</button>
+</div>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px">
+<h2 style="margin: 0 0 10px; font-size: 14px; font-weight: 600">Your decision</h2>
+<div style="font-size: 13px; color: #465062; background: #f4f6f9; border-radius: 6px; padding: 8px 10px; line-height: 1.45">Claude suggests <b style="color: #141922">Exclude: wrong population</b>, confidence medium. People experiencing homelessness are not reported separately.</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 12px">
+<button type="button" style="min-height: 48px; border: 1px solid #dfe3ea; background: #ffffff; border-radius: 8px; font-weight: 600">Include</button>
+<button type="button" style="min-height: 48px; border: 0; background: #b5361f; color: #ffffff; border-radius: 8px; font-weight: 600">Exclude</button>
+<button type="button" style="min-height: 48px; border: 1px solid #dfe3ea; background: #ffffff; border-radius: 8px; font-weight: 600">Discuss</button>
+</div>
+<label style="display: block; margin-top: 12px; font-size: 12px; color: #5d6675">Exclusion reason (feeds the PRISMA flow)
+<select style="display: block; width: 100%; margin-top: 4px; padding: 8px; border: 1px solid #dfe3ea; border-radius: 6px; background: #ffffff; color: #141922; font-size: 13px">
+<option>Wrong population</option>
+<option>Not a systematic review</option>
+<option>No cognitive outcome</option>
+<option>Earlier version of an included review</option>
+<option>Full text not obtainable</option>
+<option>Other (state in note)</option>
+</select>
+</label>
+<label style="display: block; margin-top: 10px; font-size: 12px; color: #5d6675">Note
+<input type="text" placeholder="Optional, shown if the decision conflicts" style="display: block; width: 100%; box-sizing: border-box; margin-top: 4px; padding: 8px 10px; border: 1px solid #dfe3ea; border-radius: 6px; font-size: 13px">
+</label>
+<button type="button" style="margin-top: 12px; width: 100%; min-height: 44px; border: 0; background: #141922; color: #ffffff; border-radius: 8px; font-weight: 500">Save and next report</button>
+<p style="margin: 10px 0 0; font-size: 12px; color: #5d6675; line-height: 1.4">Coder 2's decision on F14 stays hidden until you have both decided. Disagreements go to the Agreement tab.</p>
+</section>
+</aside>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var row = 'display:block;width:100%;text-align:left;border:0;border-radius:6px;padding:8px;min-height:44px;';
+    var chip = function (bg, fg) { return 'font-size:11px;border-radius:4px;padding:1px 6px;white-space:nowrap;background:' + bg + ';color:' + fg; };
+    var styles = {
+      todo: chip('#edf0f5', '#465062'),
+      inc: chip('#e6f6ef', '#1f6b4c'),
+      exc: chip('#fbe4df', '#8f2a17'),
+      conf: chip('#fde7dc', '#8a3a12'),
+      now: chip('#eaf2fc', '#1c5cab')
+    };
+    var queue = [
+      ['F11', 'Included', 'inc'], ['F12', 'Excluded', 'exc'], ['F13', 'Conflict', 'conf'], ['F14', 'Screening now', 'now'],
+      ['F15', 'To screen', 'todo'], ['F16', 'To screen', 'todo'], ['F17', 'To screen', 'todo'], ['F18', 'To screen', 'todo'], ['F19', 'To screen', 'todo']
+    ].map(function (q) {
+      return { id: q[0], status: q[1], chip: styles[q[2]], title: '[Author Year] · [short title]', rowStyle: row + (q[2] === 'now' ? 'background:#eaf2fc;box-shadow:inset 3px 0 0 #2a78d6' : 'background:transparent') };
+    });
+    var seg = function (on, kind) {
+      var base = 'min-height:36px;border-radius:6px;font-size:12px;font-weight:500;';
+      if (!on) return base + 'border:1px solid #dfe3ea;background:#ffffff;color:#465062';
+      if (kind === 'met') return base + 'border:1px solid #1a7f57;background:#1a7f57;color:#ffffff';
+      if (kind === 'notmet') return base + 'border:1px solid #b5361f;background:#b5361f;color:#ffffff';
+      return base + 'border:1px solid #141922;background:#141922;color:#ffffff';
+    };
+    var cstyle = { 'Met': 'font-weight:600;color:#1f6b4c', 'Not met': 'font-weight:600;color:#8f2a17', 'Unclear': 'font-weight:600;color:#7a4a00' };
+    var tag = function (c) { return 'font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:500;border-radius:4px;padding:1px 6px;color:#141922;background:' + c; };
+    var criteria = [
+      { id: 'C1', name: 'Design', rule: '[Systematic review, with or without meta-analysis, as worded in the protocol]', claude: 'Met', page: 'p. 3', you: 'met', c: 'rgba(42,120,214,0.25)' },
+      { id: 'C2', name: 'Population', rule: '[People experiencing homelessness, reported separately]', claude: 'Not met', page: 'p. 4', you: 'notmet', c: 'rgba(74,58,167,0.22)' },
+      { id: 'C3', name: 'Outcome', rule: '[Cognitive impairment or cognitive function measured]', claude: 'Met', page: 'p. 9', you: 'met', c: 'rgba(235,104,52,0.22)' },
+      { id: 'C4', name: 'Other', rule: '[Language, date or publication-type limits]', claude: 'Met', page: 'p. 1', you: '', c: '#edf0f5' }
+    ].map(function (c) {
+      return {
+        id: c.id, name: c.name, rule: c.rule, claude: c.claude, page: c.page, tag: tag(c.c), claudeStyle: cstyle[c.claude],
+        aria: c.id + ' ' + c.name + ', your judgement',
+        met: seg(c.you === 'met', 'met'), notmet: seg(c.you === 'notmet', 'notmet'), unclear: seg(c.you === 'unclear', 'unclear')
+      };
+    });
+    return { queue: queue, criteria: criteria };
+  }
+}
+</script>
+</body>
+</html>

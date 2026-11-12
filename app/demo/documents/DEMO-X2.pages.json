@@ -1,0 +1,16 @@
+{
+ "doc": "DEMO-X2",
+ "source": "invented",
+ "pages": [
+  {
+   "n": 1,
+   "label": "1",
+   "text": "Garden design for schools\n\nAn invented record for the demo."
+  },
+  {
+   "n": 2,
+   "label": "2",
+   "text": "This invented record is about garden design for schools, not garden participation."
+  }
+ ]
+}

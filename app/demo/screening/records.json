@@ -1,0 +1,62 @@
+[
+ {
+  "id": "DEMO-A",
+  "short": "Community garden pilot",
+  "title": "Community garden pilot: final report",
+  "authors": "Invented Author",
+  "year": "2019",
+  "type": "Report",
+  "pdf": null,
+  "flags": []
+ },
+ {
+  "id": "DEMO-B",
+  "short": "Gardens and wellbeing",
+  "title": "Gardens and wellbeing: a short evaluation",
+  "authors": "Invented Author",
+  "year": "2020",
+  "type": "Report",
+  "pdf": null,
+  "flags": []
+ },
+ {
+  "id": "DEMO-C",
+  "short": "Running a neighbourhood garden",
+  "title": "Running a neighbourhood garden: a practice guide",
+  "authors": "Invented Author",
+  "year": "2021",
+  "type": "Report",
+  "pdf": null,
+  "flags": []
+ },
+ {
+  "id": "DEMO-D",
+  "short": "Voices from the garden",
+  "title": "Voices from the garden: participant stories",
+  "authors": "Invented Author",
+  "year": "2022",
+  "type": "Report",
+  "pdf": null,
+  "flags": []
+ },
+ {
+  "id": "DEMO-X1",
+  "short": "Allotment waiting lists in one town",
+  "title": "Allotment waiting lists in one town",
+  "authors": "Invented Author",
+  "year": "2021",
+  "type": "Report",
+  "pdf": null,
+  "flags": []
+ },
+ {
+  "id": "DEMO-X2",
+  "short": "Garden design for schools",
+  "title": "Garden design for schools",
+  "authors": "Invented Author",
+  "year": "2021",
+  "type": "Report",
+  "pdf": null,
+  "flags": []
+ }
+]

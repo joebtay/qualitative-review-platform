@@ -1,0 +1,21 @@
+/* The welcome page and the PI's page (cloudflare/site). Built on the app's own stylesheet. */
+.wrap{max-width:980px;margin:0 auto;padding:28px 18px 48px}
+.head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+.intro{color:var(--ink2);max-width:70ch;white-space:pre-line;margin:6px 0 0}
+.reviews{display:grid;gap:14px}
+.review h2{font-size:18px;margin:0 0 4px}
+.review .desc{white-space:pre-line;margin:8px 0}
+.review ul{margin:6px 0 0;padding-left:18px}
+.status{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:2px 9px;color:var(--ink2);background:#f7f8fa;white-space:nowrap}
+.status.open{background:#e8f6ef;border-color:#9bd3b8;color:#0b5c3f}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+table.t th,table.t td{text-align:left;padding:7px 8px;border-bottom:1px solid #eef0f4;vertical-align:top}
+table.t th{font-size:12px;color:var(--muted);font-weight:600}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 16px}
+.shown{background:#e8f6ef;border:1px solid #9bd3b8;border-radius:8px;padding:12px 14px;margin:10px 0}
+.shown code{font-size:16px;font-weight:600}
+.look{color:var(--bad);font-weight:600}
+textarea{min-height:70px}
+label.f{display:block;font-size:12px;color:var(--muted);margin:8px 0}
+label.f input,label.f select,label.f textarea{display:block;margin-top:4px;border:1px solid var(--line);border-radius:6px;padding:7px 9px;width:100%;background:#fff;font-size:14px}
+@media (max-width:640px){table.t{font-size:13px}.hide-s{display:none}}

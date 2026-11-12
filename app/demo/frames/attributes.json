@@ -1,0 +1,46 @@
+{
+ "id": "attributes",
+ "name": "Attributes",
+ "type": "attribute",
+ "description": "Whose voice the paragraph carries.",
+ "stratify_by": "voice",
+ "fields": [
+  {
+   "id": "voice",
+   "label": "Voice",
+   "codebook_ref": "Voice",
+   "required": true,
+   "multi": false,
+   "depends_on": null,
+   "rules": [
+    "Code who is speaking, not who is spoken about."
+   ],
+   "values": [
+    {
+     "id": "reported outcome",
+     "label": "reported outcome",
+     "group": null,
+     "parent": null,
+     "definition": "A measured result.",
+     "anchors": []
+    },
+    {
+     "id": "participant view",
+     "label": "participant view",
+     "group": null,
+     "parent": null,
+     "definition": "A participant describes their experience.",
+     "anchors": []
+    },
+    {
+     "id": "organiser view",
+     "label": "organiser view",
+     "group": null,
+     "parent": null,
+     "definition": "An organiser describes how things work.",
+     "anchors": []
+    }
+   ]
+  }
+ ]
+}

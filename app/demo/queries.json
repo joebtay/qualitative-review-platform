@@ -1,0 +1,32 @@
+[
+ {
+  "id": "Q1",
+  "title": "Participant stories: publication-level document?",
+  "question": "DEMO-D is a collection of participant stories, not a report. Should it count as a publication-level document?",
+  "docs": [
+   "DEMO-D"
+  ],
+  "related_docs": [
+   "DEMO-B"
+  ],
+  "context": "Invented example. A real query states what the document is and why it is borderline.",
+  "options": [
+   {
+    "id": "include",
+    "label": "Include in the review"
+   },
+   {
+    "id": "exclude",
+    "label": "Exclude, and record the reason"
+   },
+   {
+    "id": "case-by-case",
+    "label": "Decide after reading it"
+   }
+  ],
+  "priority": "medium",
+  "raised": "2026-10-07",
+  "raised_by": "claude",
+  "status": "open"
+ }
+]

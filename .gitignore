@@ -1,0 +1,4 @@
+r_*.png
+__pycache__/
+dist/
+.dev.vars

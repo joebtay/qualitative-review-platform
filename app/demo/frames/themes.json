@@ -1,0 +1,156 @@
+{
+ "id": "themes",
+ "name": "Themes",
+ "type": "taxonomy",
+ "description": "Invented two-level theme frame for the demo.",
+ "stratify_by": "theme",
+ "fields": [
+  {
+   "id": "theme",
+   "label": "Theme",
+   "codebook_ref": "Themes",
+   "required": true,
+   "multi": false,
+   "depends_on": null,
+   "rules": [
+    "Code what the paragraph is mainly about.",
+    "Choose by the main point. Do not double-code."
+   ],
+   "values": [
+    {
+     "id": "Access",
+     "label": "Access",
+     "group": "Invented theme",
+     "parent": null,
+     "definition": "What helps or stops people from taking part in the garden: when, where and at what cost.",
+     "anchors": []
+    },
+    {
+     "id": "Skills",
+     "label": "Skills",
+     "group": "Invented theme",
+     "parent": null,
+     "definition": "What participants learn by taking part.",
+     "anchors": []
+    },
+    {
+     "id": "Wellbeing",
+     "label": "Wellbeing",
+     "group": "Invented theme",
+     "parent": null,
+     "definition": "Effects on how participants feel or function.",
+     "anchors": []
+    },
+    {
+     "id": "Organisation",
+     "label": "Organisation",
+     "group": "Invented theme",
+     "parent": null,
+     "definition": "How the garden is run and kept going.",
+     "anchors": []
+    }
+   ]
+  },
+  {
+   "id": "subtheme",
+   "label": "Subtheme",
+   "codebook_ref": "Themes",
+   "required": false,
+   "multi": false,
+   "depends_on": "theme",
+   "rules": [
+    "One subtheme, from the chosen theme only."
+   ],
+   "values": [
+    {
+     "id": "Opening hours",
+     "label": "Opening hours",
+     "group": "Access",
+     "parent": "Access",
+     "definition": "A subtheme of Access, invented for the demo.",
+     "anchors": []
+    },
+    {
+     "id": "Location and transport",
+     "label": "Location and transport",
+     "group": "Access",
+     "parent": "Access",
+     "definition": "A subtheme of Access, invented for the demo.",
+     "anchors": []
+    },
+    {
+     "id": "Cost to participants",
+     "label": "Cost to participants",
+     "group": "Access",
+     "parent": "Access",
+     "definition": "A subtheme of Access, invented for the demo.",
+     "anchors": []
+    },
+    {
+     "id": "Horticultural skills",
+     "label": "Horticultural skills",
+     "group": "Skills",
+     "parent": "Skills",
+     "definition": "A subtheme of Skills, invented for the demo.",
+     "anchors": []
+    },
+    {
+     "id": "Social skills",
+     "label": "Social skills",
+     "group": "Skills",
+     "parent": "Skills",
+     "definition": "A subtheme of Skills, invented for the demo.",
+     "anchors": []
+    },
+    {
+     "id": "Mood and stress",
+     "label": "Mood and stress",
+     "group": "Wellbeing",
+     "parent": "Wellbeing",
+     "definition": "A subtheme of Wellbeing, invented for the demo.",
+     "anchors": []
+    },
+    {
+     "id": "Physical activity",
+     "label": "Physical activity",
+     "group": "Wellbeing",
+     "parent": "Wellbeing",
+     "definition": "A subtheme of Wellbeing, invented for the demo.",
+     "anchors": []
+    },
+    {
+     "id": "Belonging",
+     "label": "Belonging",
+     "group": "Wellbeing",
+     "parent": "Wellbeing",
+     "definition": "A subtheme of Wellbeing, invented for the demo.",
+     "anchors": []
+    },
+    {
+     "id": "Funding",
+     "label": "Funding",
+     "group": "Organisation",
+     "parent": "Organisation",
+     "definition": "A subtheme of Organisation, invented for the demo.",
+     "anchors": []
+    },
+    {
+     "id": "Volunteers",
+     "label": "Volunteers",
+     "group": "Organisation",
+     "parent": "Organisation",
+     "definition": "A subtheme of Organisation, invented for the demo.",
+     "anchors": []
+    },
+    {
+     "id": "Partnerships",
+     "label": "Partnerships",
+     "group": "Organisation",
+     "parent": "Organisation",
+     "definition": "A subtheme of Organisation, invented for the demo.",
+     "anchors": []
+    }
+   ]
+  }
+ ]
+}

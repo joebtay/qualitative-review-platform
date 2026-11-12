@@ -1,0 +1,47 @@
+{
+ "schema": 1,
+ "about": "The project list for the Cloudflare site (cloudflare/README.md). One section per project, at /<id>/. A coder signs in with the name that keys their entry; handle names their work folder (work/<handle>/) and the commit author; repo is the one team repo they open. Masters are never read or saved through the site. Passwords live in Cloudflare (the PI's page, or the setting PASSWORD_<NAME>), never here. \"welcome\" and each project's \"about\" are the welcome page's starting text; the PI edits it on /admin/. This copy is an invented example: replace it with your own projects.",
+ "site": {
+  "address": "https://reviews.example.org",
+  "mail_from": "noreply@example.org",
+  "mail_name": "Review Coder",
+  "welcome_public": false
+ },
+ "projects": {
+  "gardens": {
+   "title": "Community gardens and wellbeing (invented example)",
+   "enabled": true,
+   "masters": [
+    "your-account/demo-review-data"
+   ],
+   "coders": {
+    "codera": {
+     "handle": "acoder",
+     "repo": "your-account/demo-team",
+     "email": "acoder@users.noreply.github.com"
+    }
+   },
+   "about": {
+    "status": "Full-text screening",
+    "description": "An invented review used to show how a project is listed.",
+    "links": [],
+    "team": [
+     {
+      "name": "Project lead",
+      "role": ""
+     },
+     {
+      "name": "Coder A",
+      "role": "Second reviewer"
+     }
+    ]
+   }
+  }
+ },
+ "welcome": {
+  "intro": {
+   "title": "Review Coder",
+   "text": "The team workspace for our evidence reviews. Each review has its own space: reviewers sign in with the name and password they were given, and open only their own work."
+  }
+ }
+}
