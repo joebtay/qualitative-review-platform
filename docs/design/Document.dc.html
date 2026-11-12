@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Document profile</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#f4f6f9;font-family:"IBM Plex Sans",system-ui,sans-serif;color:#141922}
+a{color:#1c5cab}a:hover{color:#123f78}
+button{font:inherit;cursor:pointer}
+input,textarea{font:inherit}
+</style>
+</helmet>
+<div style="min-height: 1100px; display: flex; flex-direction: column; background: #f4f6f9; font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #141922">
+
+<header style="background: #ffffff; border-bottom: 1px solid #dfe3ea; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px">
+<div style="display: flex; align-items: center; gap: 10px">
+<div style="width: 28px; height: 28px; border-radius: 6px; background: #141922; display: grid; place-items: center">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#ffffff" stroke-width="1.6" aria-hidden="true"><path d="M3 4h10M3 8h6M3 12h8"></path></svg>
+</div>
+<div>
+<div style="font-weight: 700; font-size: 15px; letter-spacing: -0.01em">Review Coder</div>
+<div style="font-size: 12px; color: #5d6675">Cognitive impairment · review of reviews</div>
+</div>
+</div>
+<nav aria-label="Workspace" style="display: flex; gap: 4px; flex-wrap: wrap">
+<a href="Project.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Project</a>
+<a href="Document.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; background: #141922; color: #ffffff; font-size: 14px; font-weight: 500">Documents</a>
+<a href="Screen.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Screen</a>
+<a href="Main.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Code</a>
+<a href="Verify.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Verify</a>
+<a href="Agreement.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Agreement</a>
+<a href="Overview.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Overview</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 6px; margin-left: auto; font-size: 12px; color: #1f6b4c; background: #e6f6ef; border: 1px solid #b7e3cf; border-radius: 999px; padding: 4px 10px">
+<span style="width: 7px; height: 7px; border-radius: 50%; background: #1baf7a"></span>Saved · synced to GitHub 1 min ago
+</div>
+</header>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px; padding: 16px 24px 28px; align-items: flex-start">
+
+<aside aria-label="Included documents" style="flex: 1 1 260px; max-width: 300px; min-width: 0; background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 14px">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h2 style="margin: 0; font-size: 14px; font-weight: 600">Included documents</h2>
+<span style="font-size: 12px; color: #5d6675">35</span>
+</div>
+<label style="display: block; margin-top: 10px; font-size: 12px; color: #5d6675">Find by ID, author, title or keyword
+<input type="search" placeholder="e.g. R03, Smith, screening" style="display: block; width: 100%; box-sizing: border-box; margin-top: 4px; padding: 8px 10px; border: 1px solid #dfe3ea; border-radius: 6px; font-size: 13px; background: #f9fafc">
+</label>
+<div style="margin-top: 12px; display: flex; flex-direction: column; gap: 2px">
+<sc-for list="{{docs}}" as="d" hint-placeholder-count="10">
+<button type="button" style="{{d.rowStyle}}">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #465062; flex: none; width: 34px">{{d.id}}</span>
+<span style="font-size: 13px; line-height: 1.3; min-width: 0">{{d.title}}</span>
+</button>
+</sc-for>
+</div>
+</aside>
+
+<main style="flex: 999 1 640px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 18px 22px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; background: #141922; color: #ffffff; border-radius: 4px; padding: 2px 8px">R03</span>
+<span style="font-size: 12px; color: #1c5cab; background: #eaf2fc; border-radius: 4px; padding: 2px 8px">Coding in progress</span>
+<span style="font-size: 12px; color: #465062; border: 1px solid #dfe3ea; border-radius: 4px; padding: 1px 8px">Systematic review with meta-analysis</span>
+</div>
+<h1 style="margin: 10px 0 6px; font-family: 'IBM Plex Serif', Georgia, serif; font-weight: 500; font-size: 24px; line-height: 1.3">[Review title]: cognitive impairment among people experiencing homelessness, a systematic review</h1>
+<div style="font-size: 14px; color: #465062">[Authors] · [Year] · <i>[Journal]</i> · <a href="#">doi:[DOI]</a></div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px">
+<a href="Main.dc.html" style="text-decoration: none; background: #141922; color: #ffffff; border-radius: 8px; padding: 10px 14px; font-size: 13px; font-weight: 500">Open in coding view</a>
+<a href="#" style="text-decoration: none; border: 1px solid #dfe3ea; color: #141922; border-radius: 8px; padding: 9px 14px; font-size: 13px; font-weight: 500">Open PDF</a>
+<button type="button" style="border: 1px solid #dfe3ea; background: #ffffff; border-radius: 8px; padding: 9px 14px; font-size: 13px; font-weight: 500">Copy citation</button>
+</div>
+</section>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; align-items: start">
+
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px 18px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px">
+<h2 style="margin: 0; font-size: 14px; font-weight: 600">Summary</h2>
+<button type="button" style="border: 0; background: none; color: #1c5cab; font-size: 13px; padding: 0; text-decoration: underline">Edit</button>
+</div>
+<p style="margin: 10px 0 0; font-family: 'IBM Plex Serif', Georgia, serif; font-size: 15px; line-height: 1.6; color: #1d2430">[Three to four sentences: what the review asked, what it searched, how many studies it pooled, and its main finding on cognitive impairment, written so a co-investigator can recall the document without reopening it.]</p>
+<div style="margin-top: 10px; font-size: 12px; color: #5d6675">Drafted by Claude, 3 Oct · checked by Coder 1, 5 Oct</div>
+</section>
+
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px 18px">
+<h2 style="margin: 0 0 8px; font-size: 14px; font-weight: 600">Source</h2>
+<dl style="margin: 0; display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 7px 12px; font-size: 13px">
+<dt style="color: #5d6675">Internal code</dt><dd style="margin: 0; font-family: 'IBM Plex Mono', monospace">R03</dd>
+<dt style="color: #5d6675">Found via</dt><dd style="margin: 0">[Database], parent review search</dd>
+<dt style="color: #5d6675">Screening ID</dt><dd style="margin: 0; font-family: 'IBM Plex Mono', monospace">Rayyan [ID]</dd>
+<dt style="color: #5d6675">Included by</dt><dd style="margin: 0">Coder 1 and Coder 2, [date]</dd>
+<dt style="color: #5d6675">File</dt><dd style="margin: 0; font-family: 'IBM Plex Mono', monospace; overflow-wrap: anywhere">documents/R03.pdf · 18 pp.</dd>
+<dt style="color: #5d6675">Citation key</dt><dd style="margin: 0; font-family: 'IBM Plex Mono', monospace">[AuthorYear-xx]</dd>
+</dl>
+</section>
+
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px 18px">
+<h2 style="margin: 0 0 8px; font-size: 14px; font-weight: 600">Review characteristics</h2>
+<dl style="margin: 0; display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 7px 12px; font-size: 13px">
+<dt style="color: #5d6675">Search dates</dt><dd style="margin: 0">[start] to [end]</dd>
+<dt style="color: #5d6675">Databases</dt><dd style="margin: 0">[n] · [names]</dd>
+<dt style="color: #5d6675">Primary studies</dt><dd style="margin: 0">[n] included · [n] in meta-analysis</dd>
+<dt style="color: #5d6675">Population</dt><dd style="margin: 0">[population as defined]</dd>
+<dt style="color: #5d6675">Countries</dt><dd style="margin: 0">[countries]</dd>
+<dt style="color: #5d6675">AMSTAR 2</dt><dd style="margin: 0"><span style="font-size: 12px; border: 1px solid #c3c9d3; border-radius: 4px; padding: 1px 8px">[rating]</span> <a href="#" style="font-size: 12px">see domains</a></dd>
+</dl>
+</section>
+
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px 18px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px">
+<h2 style="margin: 0; font-size: 14px; font-weight: 600">Coding in this document</h2>
+<a href="Main.dc.html" style="font-size: 13px">Go to passages</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 9px; margin-top: 12px">
+<sc-for list="{{codes}}" as="c" hint-placeholder-count="6">
+<div style="display: grid; grid-template-columns: 130px minmax(0, 1fr) 28px; gap: 10px; align-items: center; font-size: 13px">
+<span style="display: inline-flex; align-items: center; gap: 7px"><span style="{{c.swatch}}"></span>{{c.name}}</span>
+<span style="height: 8px; background: #edf0f5; border-radius: 3px"><span style="{{c.bar}}"></span></span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-align: right">{{c.n}}</span>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 12px; font-size: 12px; color: #465062">
+<span>Contributes to <a href="Project.dc.html">RQ1</a> and <a href="Project.dc.html">RQ2</a></span>
+<span>3 of 13 passages in the verification sample</span>
+</div>
+</section>
+</div>
+
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px 18px">
+<h2 style="margin: 0 0 10px; font-size: 14px; font-weight: 600">Notes on this document</h2>
+<div style="display: flex; flex-direction: column; gap: 10px; max-width: 80ch">
+<div style="display: flex; gap: 10px">
+<div style="flex: none; width: 26px; height: 26px; border-radius: 50%; background: #2a78d6; color: #ffffff; display: grid; place-items: center; font-size: 11px; font-weight: 600">JT</div>
+<div style="font-size: 13px; line-height: 1.45"><b>Coder 1</b> <span style="color: #77808f">· 5 Oct</span><br>[A note that applies to the whole document, such as overlap with another included review or a caveat on its search.]</div>
+</div>
+</div>
+<label style="display: block; margin-top: 12px; font-size: 12px; color: #5d6675; max-width: 80ch">Add a note
+<input type="text" placeholder="Visible to the whole team" style="display: block; width: 100%; box-sizing: border-box; margin-top: 4px; padding: 8px 10px; border: 1px solid #dfe3ea; border-radius: 6px; font-size: 13px">
+</label>
+</section>
+</main>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1100}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var base = 'display:flex;gap:8px;align-items:baseline;width:100%;text-align:left;border:0;border-radius:6px;padding:8px;min-height:40px;';
+    var docs = ['R01', 'R02', 'R03', 'R04', 'R05', 'R06', 'R07', 'R08', 'R09', 'R10'].map(function (id) {
+      return { id: id, title: '[Author Year] · [short title]', rowStyle: base + (id === 'R03' ? 'background:#eaf2fc;box-shadow:inset 3px 0 0 #2a78d6' : 'background:transparent') };
+    });
+    var codes = [
+      ['Prevalence', 5, '#2a78d6'], ['Assessment tools', 3, '#eb6834'], ['Aetiology', 2, '#1baf7a'],
+      ['Service access', 1, '#eda100'], ['Equity framing', 0, '#e87ba4'], ['Housing context', 2, '#4a3aa7']
+    ].map(function (c) {
+      return { name: c[0], n: String(c[1]), swatch: 'width:10px;height:10px;border-radius:3px;background:' + c[2], bar: 'display:block;height:8px;border-radius:3px;width:' + Math.round(c[1] / 5 * 100) + '%;background:' + c[2] };
+    });
+    return { docs: docs, codes: codes };
+  }
+}
+</script>
+</body>
+</html>

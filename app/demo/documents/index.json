@@ -1,0 +1,68 @@
+[
+ {
+  "id": "DEMO-A",
+  "title": "Community garden pilot: final report",
+  "authors": "Invented Author",
+  "org": "Invented Trust",
+  "year": "2019",
+  "type": "Report",
+  "family": "Evaluation",
+  "country": "Nowhere",
+  "url": "https://example.org/demo-a",
+  "summary": "An invented document for the demo.",
+  "summary_page": "1",
+  "pdf": null,
+  "flags": [],
+  "interventions": []
+ },
+ {
+  "id": "DEMO-B",
+  "title": "Gardens and wellbeing: a short evaluation",
+  "authors": "Invented Author",
+  "org": "Example University",
+  "year": "2020",
+  "type": "Report",
+  "family": "Research",
+  "country": "Nowhere",
+  "url": "https://example.org/demo-b",
+  "summary": "An invented document for the demo.",
+  "summary_page": "1",
+  "pdf": null,
+  "flags": [],
+  "interventions": []
+ },
+ {
+  "id": "DEMO-C",
+  "title": "Running a neighbourhood garden: a practice guide",
+  "authors": "Invented Author",
+  "org": "Sample Council",
+  "year": "2021",
+  "type": "Report",
+  "family": "Guide",
+  "country": "Nowhere",
+  "url": "https://example.org/demo-c",
+  "summary": "An invented document for the demo.",
+  "summary_page": "1",
+  "pdf": null,
+  "flags": [],
+  "interventions": []
+ },
+ {
+  "id": "DEMO-D",
+  "title": "Voices from the garden: participant stories",
+  "authors": "Invented Author",
+  "org": "Placeholder Network",
+  "year": "2022",
+  "type": "Report",
+  "family": "Case study",
+  "country": "Nowhere",
+  "url": "https://example.org/demo-d",
+  "summary": "An invented document for the demo.",
+  "summary_page": "1",
+  "pdf": null,
+  "flags": [
+   "query:Q1"
+  ],
+  "interventions": []
+ }
+]

@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Code a document</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#f4f6f9;font-family:"IBM Plex Sans",system-ui,sans-serif;color:#141922}
+a{color:#1c5cab}a:hover{color:#123f78}
+button{font:inherit;cursor:pointer}
+textarea,input{font:inherit}
+</style>
+</helmet>
+<div style="min-height: 940px; display: flex; flex-direction: column; background: #f4f6f9; font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #141922">
+
+<header style="background: #ffffff; border-bottom: 1px solid #dfe3ea; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px">
+<div style="display: flex; align-items: center; gap: 10px">
+<div style="width: 28px; height: 28px; border-radius: 6px; background: #141922; display: grid; place-items: center">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#ffffff" stroke-width="1.6" aria-hidden="true"><path d="M3 4h10M3 8h6M3 12h8"></path></svg>
+</div>
+<div>
+<div style="font-weight: 700; font-size: 15px; letter-spacing: -0.01em">Review Coder</div>
+<div style="font-size: 12px; color: #5d6675">Cognitive impairment · review of reviews</div>
+</div>
+</div>
+<nav aria-label="Workspace" style="display: flex; gap: 4px; flex-wrap: wrap">
+<a href="Project.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Project</a>
+<a href="Document.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Documents</a>
+<a href="Screen.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Screen</a>
+<a href="Main.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; background: #141922; color: #ffffff; font-size: 14px; font-weight: 500">Code</a>
+<a href="Verify.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Verify</a>
+<a href="Agreement.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Agreement</a>
+<a href="Overview.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Overview</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 20px; margin-left: auto; flex-wrap: wrap">
+<div style="min-width: 170px">
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #465062"><span>Corpus coded</span><b style="color: #141922">62%</b></div>
+<div style="height: 6px; background: #edf0f5; border-radius: 3px; margin-top: 4px"><div style="width: 62%; height: 6px; background: #2a78d6; border-radius: 3px"></div></div>
+</div>
+<div style="min-width: 170px">
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #465062"><span>Sample verified</span><b style="color: #141922">35%</b></div>
+<div style="height: 6px; background: #edf0f5; border-radius: 3px; margin-top: 4px"><div style="width: 35%; height: 6px; background: #1baf7a; border-radius: 3px"></div></div>
+</div>
+<div style="display: flex; align-items: center; gap: 6px; font-size: 12px; color: #1f6b4c; background: #e6f6ef; border: 1px solid #b7e3cf; border-radius: 999px; padding: 4px 10px">
+<span style="width: 7px; height: 7px; border-radius: 50%; background: #1baf7a"></span>Saved · synced to GitHub 1 min ago
+</div>
+<div style="display: flex; align-items: center; gap: 8px">
+<div style="width: 30px; height: 30px; border-radius: 50%; background: #2a78d6; color: #ffffff; display: grid; place-items: center; font-size: 12px; font-weight: 600">JT</div>
+<span style="font-size: 13px; color: #465062">Coder 1</span>
+</div>
+</div>
+</header>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px; padding: 16px 24px 24px; align-items: flex-start">
+
+<aside aria-label="Documents" style="flex: 1 1 260px; max-width: 300px; min-width: 0; background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 14px">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h2 style="margin: 0; font-size: 14px; font-weight: 600">Documents</h2>
+<span style="font-size: 12px; color: #5d6675">22 of 35 coded</span>
+</div>
+<label style="display: block; margin-top: 10px; font-size: 12px; color: #5d6675">Search passages and documents
+<input type="search" placeholder="e.g. MoCA, prevalence" style="display: block; width: 100%; box-sizing: border-box; margin-top: 4px; padding: 8px 10px; border: 1px solid #dfe3ea; border-radius: 6px; font-size: 13px; background: #f9fafc">
+</label>
+<div style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px">
+<button type="button" style="border: 1px solid #2a78d6; background: #2a78d6; color: #ffffff; border-radius: 999px; padding: 3px 10px; font-size: 12px">All</button>
+<button type="button" style="border: 1px solid #dfe3ea; background: #ffffff; color: #465062; border-radius: 999px; padding: 3px 10px; font-size: 12px">Claude only</button>
+<button type="button" style="border: 1px solid #dfe3ea; background: #ffffff; color: #465062; border-radius: 999px; padding: 3px 10px; font-size: 12px">In progress</button>
+<button type="button" style="border: 1px solid #dfe3ea; background: #ffffff; color: #465062; border-radius: 999px; padding: 3px 10px; font-size: 12px">Done</button>
+</div>
+<div style="margin-top: 12px; display: flex; flex-direction: column; gap: 2px">
+<sc-for list="{{docs}}" as="d" hint-placeholder-count="8">
+<button type="button" style="{{d.rowStyle}}">
+<div style="display: flex; justify-content: space-between; gap: 8px; align-items: baseline">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #465062">{{d.id}}</span>
+<span style="{{d.chipStyle}}">{{d.status}}</span>
+</div>
+<div style="font-size: 13px; color: #141922; margin-top: 2px; line-height: 1.3">{{d.title}}</div>
+<div style="height: 4px; background: #edf0f5; border-radius: 2px; margin-top: 6px"><div style="{{d.barStyle}}"></div></div>
+</button>
+</sc-for>
+</div>
+</aside>
+
+<main style="flex: 999 1 560px; min-width: 0; background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px">
+<div style="padding: 16px 22px; border-bottom: 1px solid #dfe3ea; display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center">
+<div style="flex: 1 1 320px; min-width: 0">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5d6675">R03 · [Author Year] · p. 4 of 18 · <a href="Document.dc.html" style="font-family: 'IBM Plex Sans', sans-serif">Document details</a></div>
+<h1 style="margin: 2px 0 0; font-size: 18px; font-weight: 600; line-height: 1.3">[Review title]: cognitive impairment among people experiencing homelessness, a systematic review</h1>
+</div>
+<fieldset style="border: 0; margin: 0; padding: 0; display: flex; gap: 14px; flex-wrap: wrap; font-size: 13px; color: #465062">
+<legend style="position: absolute; width: 1px; height: 1px; overflow: hidden">Layers shown</legend>
+<label style="display: flex; align-items: center; gap: 6px"><input type="checkbox" checked>Claude suggestions</label>
+<label style="display: flex; align-items: center; gap: 6px"><input type="checkbox" checked>My codes</label>
+<label style="display: flex; align-items: center; gap: 6px; color: #77808f"><input type="checkbox" disabled>Coder 2 (blinded)</label>
+</fieldset>
+</div>
+
+<div style="padding: 10px 22px; display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 12px; color: #465062; border-bottom: 1px solid #edf0f5; background: #f9fafc">
+<span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 22px; height: 12px; border-radius: 2px; border: 1.5px dashed #2a78d6; background: rgba(42,120,214,0.08)"></span>Claude suggestion, not yet reviewed</span>
+<span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 22px; height: 12px; border-radius: 2px; background: rgba(42,120,214,0.28)"></span>Confirmed by you</span>
+<span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 22px; height: 12px; border-radius: 2px; background: rgba(42,120,214,0.28); outline: 2px solid #141922"></span>Selected</span>
+</div>
+
+<article style="padding: 22px 28px 30px; font-family: 'IBM Plex Serif', Georgia, serif; font-size: 17px; line-height: 1.75; color: #1d2430; max-width: 74ch">
+<h3 style="font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: #5d6675; margin: 0 0 10px">3.2 Prevalence of cognitive impairment</h3>
+<p style="margin: 0 0 18px">Across the included studies, <mark style="background: rgba(42,120,214,0.28); color: inherit; padding: 2px 0; border-radius: 2px; outline: 2px solid #141922; outline-offset: 1px">pooled prevalence of cognitive impairment among adults experiencing homelessness was substantially higher than in housed comparison populations, with estimates varying widely by assessment tool</mark><sup style="font-family: 'IBM Plex Sans', sans-serif; font-size: 11px; font-weight: 600; color: #ffffff; background: #2a78d6; border-radius: 3px; padding: 1px 5px; margin-left: 4px">Prevalence</sup>. Heterogeneity was high and remained so after sensitivity analysis.</p>
+<p style="margin: 0 0 18px"><mark style="background: rgba(235,104,52,0.10); color: inherit; padding: 2px 0; border-radius: 2px; border-bottom: 2px dashed #c44f1d">Most studies relied on brief screening instruments administered in shelter or drop-in settings, and few validated these instruments against a full neuropsychological battery</mark><sup style="font-family: 'IBM Plex Sans', sans-serif; font-size: 11px; font-weight: 600; color: #8a3a12; background: #fde7dc; border: 1px dashed #c44f1d; border-radius: 3px; padding: 0 5px; margin-left: 4px">Assessment tools?</sup>. Where full batteries were used, deficits clustered in memory and executive function.</p>
+<p style="margin: 0 0 18px">Several reviews noted that <mark style="background: rgba(27,175,122,0.10); color: inherit; padding: 2px 0; border-radius: 2px; border-bottom: 2px dashed #138a5f">traumatic brain injury, alcohol use and prior psychiatric admission were each associated with impairment, although cross-sectional designs prevented any judgement about direction</mark><sup style="font-family: 'IBM Plex Sans', sans-serif; font-size: 11px; font-weight: 600; color: #0d5c40; background: #dcf4ea; border: 1px dashed #138a5f; border-radius: 3px; padding: 0 5px; margin-left: 4px">Aetiology?</sup>.</p>
+<p style="margin: 0"><mark style="background: rgba(237,161,0,0.30); color: inherit; padding: 2px 0; border-radius: 2px">The authors argue that unrecognised impairment may explain missed appointments and disengagement that services attribute to motivation</mark><sup style="font-family: 'IBM Plex Sans', sans-serif; font-size: 11px; font-weight: 600; color: #141922; background: #eda100; border-radius: 3px; padding: 1px 5px; margin-left: 4px">Service access</sup>. They call for routine screening linked to adapted care pathways.</p>
+</article>
+
+<div style="padding: 12px 22px; border-top: 1px solid #dfe3ea; display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; align-items: center; font-size: 13px; color: #465062">
+<span>Select any text to add your own code. 3 Claude suggestions on this page still to review.</span>
+<div style="display: flex; gap: 8px">
+<button type="button" style="border: 1px solid #dfe3ea; background: #ffffff; border-radius: 6px; padding: 7px 12px; min-height: 36px">Previous page</button>
+<button type="button" style="border: 1px solid #dfe3ea; background: #ffffff; border-radius: 6px; padding: 7px 12px; min-height: 36px">Next page</button>
+<a href="#" style="border: 1px solid #dfe3ea; background: #ffffff; border-radius: 6px; padding: 7px 12px; text-decoration: none; color: #1c5cab">Open PDF p. 4</a>
+</div>
+</div>
+</main>
+
+<aside aria-label="Selected passage" style="flex: 1 1 340px; max-width: 400px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+<h2 style="margin: 0; font-size: 14px; font-weight: 600">Selected passage</h2>
+<span style="font-size: 12px; color: #5d6675">R03 · p. 4 · ¶1</span>
+</div>
+<div style="display: flex; align-items: center; gap: 8px; margin-top: 12px">
+<span style="width: 12px; height: 12px; border-radius: 3px; background: #2a78d6"></span>
+<span style="font-weight: 600; font-size: 15px">Prevalence</span>
+<span style="margin-left: auto; font-size: 12px; color: #1f6b4c; background: #e6f6ef; border-radius: 4px; padding: 2px 7px">Confirmed by you</span>
+</div>
+<div style="margin-top: 12px; background: #f4f6f9; border-radius: 8px; padding: 10px 12px; font-size: 13px; color: #465062; line-height: 1.45">
+<div style="font-weight: 600; color: #141922; margin-bottom: 3px">Claude's first pass</div>
+Coded <b>Prevalence</b>, confidence high. Reports a pooled estimate in the target population against a housed comparison.
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #77808f; margin-top: 6px">Codebook v1.2 · run 3 Oct</div>
+</div>
+<div style="display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap">
+<button type="button" style="flex: 1 1 90px; min-height: 44px; border: 0; background: #141922; color: #ffffff; border-radius: 8px; font-weight: 500">Accept</button>
+<button type="button" style="flex: 1 1 90px; min-height: 44px; border: 1px solid #dfe3ea; background: #ffffff; border-radius: 8px; font-weight: 500">Change code</button>
+<button type="button" style="flex: 1 1 90px; min-height: 44px; border: 1px solid #dfe3ea; background: #ffffff; border-radius: 8px; font-weight: 500">Reject</button>
+</div>
+<label style="display: flex; align-items: center; gap: 8px; margin-top: 12px; font-size: 13px; color: #465062"><input type="checkbox">Flag as unsure for discussion</label>
+<label style="display: block; margin-top: 12px; font-size: 12px; color: #5d6675">Memo (private until verification ends)
+<textarea rows="2" placeholder="Why you coded it this way" style="display: block; width: 100%; box-sizing: border-box; margin-top: 4px; padding: 8px 10px; border: 1px solid #dfe3ea; border-radius: 6px; font-size: 13px; resize: vertical"></textarea>
+</label>
+</section>
+
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px">
+<h2 style="margin: 0 0 10px; font-size: 14px; font-weight: 600">Comments</h2>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 10px">
+<div style="flex: none; width: 26px; height: 26px; border-radius: 50%; background: #2a78d6; color: #ffffff; display: grid; place-items: center; font-size: 11px; font-weight: 600">JT</div>
+<div style="font-size: 13px; line-height: 1.45"><b>Coder 1</b> <span style="color: #77808f">· 06:52</span><br>Pooled figure mixes screening and full batteries. Should this also get Assessment tools?</div>
+</div>
+<div style="display: flex; gap: 10px">
+<div style="flex: none; width: 26px; height: 26px; border-radius: 50%; background: #465062; color: #ffffff; display: grid; place-items: center; font-size: 11px; font-weight: 600">C</div>
+<div style="font-size: 13px; line-height: 1.45"><b>Claude</b> <span style="color: #77808f">· 06:53</span><br>The next paragraph carries the tool detail and is suggested as Assessment tools. Double coding here would count the same finding twice.</div>
+</div>
+</div>
+<label style="display: block; margin-top: 12px; font-size: 12px; color: #5d6675">Add a comment
+<input type="text" placeholder="Reply or tag a co-investigator" style="display: block; width: 100%; box-sizing: border-box; margin-top: 4px; padding: 8px 10px; border: 1px solid #dfe3ea; border-radius: 6px; font-size: 13px">
+</label>
+</section>
+
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h2 style="margin: 0; font-size: 14px; font-weight: 600">Codebook</h2>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5d6675">v1.2 · 3 Oct</span>
+</div>
+<div style="margin-top: 10px; display: flex; flex-direction: column; gap: 4px">
+<sc-for list="{{codes}}" as="c" hint-placeholder-count="6">
+<button type="button" style="display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; border: 0; background: transparent; padding: 7px 6px; border-radius: 6px; min-height: 36px">
+<span style="{{c.swatch}}"></span>
+<span style="flex: 1; font-size: 13px; color: #141922">{{c.name}}</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5d6675">{{c.count}}</span>
+<kbd style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #465062; border: 1px solid #dfe3ea; border-radius: 4px; padding: 0 5px">{{c.key}}</kbd>
+</button>
+</sc-for>
+</div>
+</section>
+</aside>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":940}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var row = 'display:block;width:100%;text-align:left;border:0;border-radius:6px;padding:8px 8px;min-height:44px;';
+    var chip = function (bg, fg) { return 'font-size:11px;border-radius:4px;padding:1px 6px;background:' + bg + ';color:' + fg; };
+    var bar = function (w, c) { return 'width:' + w + '%;height:4px;border-radius:2px;background:' + c; };
+    var docs = [
+      { id: 'R01', title: '[Review title] · housing and memory', status: 'Done', p: 100, s: 'done' },
+      { id: 'R02', title: '[Review title] · TBI in shelters', status: 'Done', p: 100, s: 'done' },
+      { id: 'R03', title: '[Review title] · prevalence, systematic review', status: 'In progress', p: 55, s: 'active' },
+      { id: 'R04', title: '[Review title] · screening tools', status: 'Claude only', p: 0, s: 'claude' },
+      { id: 'R05', title: '[Review title] · ageing and homelessness', status: 'Claude only', p: 0, s: 'claude' },
+      { id: 'R06', title: '[Review title] · service engagement', status: 'Not started', p: 0, s: 'none' },
+      { id: 'R07', title: '[Review title] · substance use and cognition', status: 'Not started', p: 0, s: 'none' }
+    ];
+    docs = docs.map(function (d) {
+      var r = row + (d.s === 'active' ? 'background:#eaf2fc;box-shadow:inset 3px 0 0 #2a78d6;' : 'background:transparent;');
+      var c = d.s === 'done' ? chip('#e6f6ef', '#1f6b4c') : d.s === 'active' ? chip('#eaf2fc', '#1c5cab') : d.s === 'claude' ? chip('#f1eefb', '#4a3aa7') : chip('#edf0f5', '#465062');
+      var b = bar(d.p, d.s === 'done' ? '#1baf7a' : '#2a78d6');
+      return Object.assign({}, d, { rowStyle: r, chipStyle: c, barStyle: b });
+    });
+    var sw = function (c) { return 'flex:none;width:12px;height:12px;border-radius:3px;background:' + c; };
+    var codes = [
+      { name: 'Prevalence', count: 41, key: '1', swatch: sw('#2a78d6') },
+      { name: 'Assessment tools', count: 33, key: '2', swatch: sw('#eb6834') },
+      { name: 'Aetiology', count: 27, key: '3', swatch: sw('#1baf7a') },
+      { name: 'Service access', count: 19, key: '4', swatch: sw('#eda100') },
+      { name: 'Equity framing', count: 12, key: '5', swatch: sw('#e87ba4') },
+      { name: 'Housing context', count: 15, key: '6', swatch: sw('#4a3aa7') }
+    ];
+    return { docs: docs, codes: codes };
+  }
+}
+</script>
+</body>
+</html>

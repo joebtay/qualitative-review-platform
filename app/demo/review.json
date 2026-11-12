@@ -1,0 +1,121 @@
+{
+ "schema": 1,
+ "id": "demo",
+ "title": "Demo: community gardens and wellbeing",
+ "subtitle": "Invented data. Nothing here is real.",
+ "unit": "paragraph",
+ "codebook": "codebook.md",
+ "codebook_version": "demo",
+ "questions": [
+  {
+   "id": "RQ1",
+   "text": "What helps people take part in community gardens?",
+   "frames": [
+    "themes"
+   ]
+  },
+  {
+   "id": "RQ2",
+   "text": "What changes do participants report?",
+   "frames": [
+    "themes",
+    "attributes"
+   ]
+  }
+ ],
+ "team": [
+  {
+   "handle": "demo-coder",
+   "name": "You",
+   "role": "Second coder"
+  }
+ ],
+ "links": [],
+ "milestones": [
+  {
+   "date": null,
+   "label": "Try the demo",
+   "done": true
+  }
+ ],
+ "prisma": {
+  "identified": 120,
+  "screened": 120,
+  "sought": 14,
+  "assessed": 12,
+  "excluded": [
+   {
+    "reason": "Wrong population",
+    "n": 5
+   },
+   {
+    "reason": "Not a review document",
+    "n": 3
+   }
+  ],
+  "included": 4
+ },
+ "frames": [
+  "themes",
+  "attributes"
+ ],
+ "layers": [
+  {
+   "id": "claude-demo",
+   "label": "Claude (demo)",
+   "kind": "claude",
+   "frames": [
+    "themes",
+    "attributes"
+   ]
+  }
+ ],
+ "first_layer": "claude-demo",
+ "sampling": {
+  "fraction": 0.15,
+  "min_per_stratum": 2
+ },
+ "screening": {
+  "enabled": true,
+  "stage": "full-text",
+  "blind": true,
+  "note": "Blinded full-text screening: judge each criterion and decide from the full text with the first screen hidden. Saving your decision shows the first screen beside yours.",
+  "records": "screening/records.json",
+  "first": "screening/first-screen.json",
+  "criteria": [
+   {
+    "id": "population",
+    "label": "Population",
+    "definition": "Adults who take part in, or could take part in, a community garden."
+   },
+   {
+    "id": "concept",
+    "label": "Concept",
+    "definition": "Participation in, or effects of, a community garden."
+   },
+   {
+    "id": "context",
+    "label": "Context",
+    "definition": "Any community setting."
+   },
+   {
+    "id": "source",
+    "label": "Source",
+    "definition": "A report, evaluation or guide, any year."
+   }
+  ],
+  "judgements": [
+   "Met",
+   "Not met",
+   "Unclear"
+  ],
+  "reasons": [
+   "Wrong population",
+   "Wrong concept",
+   "Wrong setting",
+   "Wrong publication type"
+  ],
+  "rulings": [],
+  "source": "the demo protocol"
+ }
+}

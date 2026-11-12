@@ -1,0 +1,152 @@
+{
+ "screener": "demo-first",
+ "name": "First screener (demo)",
+ "date": "2026-10-08",
+ "basis": "Invented.",
+ "records": {
+  "DEMO-A": {
+   "criteria": {
+    "population": {
+     "judgement": "Met",
+     "note": "Met. Invented note on population (p.3)."
+    },
+    "concept": {
+     "judgement": "Met",
+     "note": "Met. Invented note on concept (p.3)."
+    },
+    "context": {
+     "judgement": "Met",
+     "note": "Met. Invented note on context (p.3)."
+    },
+    "source": {
+     "judgement": "Met",
+     "note": "Met. Invented note on source (p.3)."
+    }
+   },
+   "call": "Include.",
+   "rulings": [],
+   "decision": "include",
+   "reason": null
+  },
+  "DEMO-B": {
+   "criteria": {
+    "population": {
+     "judgement": "Met",
+     "note": "Met. Invented note on population (p.3)."
+    },
+    "concept": {
+     "judgement": "Met",
+     "note": "Met. Invented note on concept (p.3)."
+    },
+    "context": {
+     "judgement": "Met",
+     "note": "Met. Invented note on context (p.3)."
+    },
+    "source": {
+     "judgement": "Met",
+     "note": "Met. Invented note on source (p.3)."
+    }
+   },
+   "call": "Include.",
+   "rulings": [],
+   "decision": "include",
+   "reason": null
+  },
+  "DEMO-C": {
+   "criteria": {
+    "population": {
+     "judgement": "Met",
+     "note": "Met. Invented note on population (p.3)."
+    },
+    "concept": {
+     "judgement": "Met",
+     "note": "Met. Invented note on concept (p.3)."
+    },
+    "context": {
+     "judgement": "Met",
+     "note": "Met. Invented note on context (p.3)."
+    },
+    "source": {
+     "judgement": "Met",
+     "note": "Met. Invented note on source (p.3)."
+    }
+   },
+   "call": "Include.",
+   "rulings": [],
+   "decision": "include",
+   "reason": null
+  },
+  "DEMO-D": {
+   "criteria": {
+    "population": {
+     "judgement": "Met",
+     "note": "Met. Invented note on population (p.3)."
+    },
+    "concept": {
+     "judgement": "Met",
+     "note": "Met. Invented note on concept (p.3)."
+    },
+    "context": {
+     "judgement": "Met",
+     "note": "Met. Invented note on context (p.3)."
+    },
+    "source": {
+     "judgement": "Met",
+     "note": "Met. Invented note on source (p.3)."
+    }
+   },
+   "call": "Include.",
+   "rulings": [],
+   "decision": "include",
+   "reason": null
+  },
+  "DEMO-X1": {
+   "criteria": {
+    "population": {
+     "judgement": "Met",
+     "note": "Met. Invented note."
+    },
+    "concept": {
+     "judgement": "Not met",
+     "note": "Not met. This invented record is about allotment waiting lists in one town, not garden participation (p.2)."
+    },
+    "context": {
+     "judgement": "Met",
+     "note": "Met. Invented note."
+    },
+    "source": {
+     "judgement": "Met",
+     "note": "Met. Invented note."
+    }
+   },
+   "call": "Exclude (Wrong concept).",
+   "rulings": [],
+   "decision": "exclude",
+   "reason": "Wrong concept"
+  },
+  "DEMO-X2": {
+   "criteria": {
+    "population": {
+     "judgement": "Not met",
+     "note": "Not met. This invented record is about garden design for schools, not garden participation (p.2)."
+    },
+    "concept": {
+     "judgement": "Met",
+     "note": "Met. Invented note."
+    },
+    "context": {
+     "judgement": "Met",
+     "note": "Met. Invented note."
+    },
+    "source": {
+     "judgement": "Met",
+     "note": "Met. Invented note."
+    }
+   },
+   "call": "Exclude (Wrong population).",
+   "rulings": [],
+   "decision": "exclude",
+   "reason": "Wrong population"
+  }
+ }
+}

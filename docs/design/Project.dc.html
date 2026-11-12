@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Project, questions and PRISMA</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#f4f6f9;font-family:"IBM Plex Sans",system-ui,sans-serif;color:#141922}
+a{color:#1c5cab}a:hover{color:#123f78}
+button{font:inherit;cursor:pointer}
+</style>
+</helmet>
+<div style="min-height: 1100px; display: flex; flex-direction: column; background: #f4f6f9; font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #141922">
+
+<header style="background: #ffffff; border-bottom: 1px solid #dfe3ea; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px">
+<div style="display: flex; align-items: center; gap: 10px">
+<div style="width: 28px; height: 28px; border-radius: 6px; background: #141922; display: grid; place-items: center">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#ffffff" stroke-width="1.6" aria-hidden="true"><path d="M3 4h10M3 8h6M3 12h8"></path></svg>
+</div>
+<div>
+<div style="font-weight: 700; font-size: 15px; letter-spacing: -0.01em">Review Coder</div>
+<div style="font-size: 12px; color: #5d6675">Cognitive impairment · review of reviews</div>
+</div>
+</div>
+<nav aria-label="Workspace" style="display: flex; gap: 4px; flex-wrap: wrap">
+<a href="Project.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; background: #141922; color: #ffffff; font-size: 14px; font-weight: 500">Project</a>
+<a href="Document.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Documents</a>
+<a href="Screen.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Screen</a>
+<a href="Main.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Code</a>
+<a href="Verify.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Verify</a>
+<a href="Agreement.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Agreement</a>
+<a href="Overview.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Overview</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 6px; margin-left: auto; font-size: 12px; color: #1f6b4c; background: #e6f6ef; border: 1px solid #b7e3cf; border-radius: 999px; padding: 4px 10px">
+<span style="width: 7px; height: 7px; border-radius: 50%; background: #1baf7a"></span>Saved · synced to GitHub 1 min ago
+</div>
+</header>
+
+<div style="padding: 20px 24px 28px; display: flex; flex-direction: column; gap: 16px; max-width: 1400px; width: 100%; box-sizing: border-box; margin: 0 auto">
+
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 20px 22px">
+<div style="font-size: 12px; color: #5d6675; text-transform: uppercase; letter-spacing: 0.06em">Project</div>
+<h1 style="margin: 4px 0 10px; font-family: 'IBM Plex Serif', Georgia, serif; font-weight: 500; font-size: 26px; line-height: 1.25">[Review title]: cognitive impairment among people experiencing homelessness, a review of reviews</h1>
+<p style="margin: 0; font-size: 14px; color: #465062; max-width: 90ch; line-height: 1.55">Cognitive branch of [parent review]. [One-sentence aim of the review, as written in the protocol.]</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px">
+<span style="font-size: 12px; border: 1px solid #dfe3ea; border-radius: 999px; padding: 3px 10px; color: #465062">Protocol: <b style="color: #141922">OSF [ID]</b></span>
+<span style="font-size: 12px; border: 1px solid #dfe3ea; border-radius: 999px; padding: 3px 10px; color: #465062">Design: <b style="color: #141922">Umbrella review</b></span>
+<span style="font-size: 12px; border: 1px solid #dfe3ea; border-radius: 999px; padding: 3px 10px; color: #465062">Stage: <b style="color: #141922">Coding</b></span>
+<span style="font-size: 12px; border: 1px solid #dfe3ea; border-radius: 999px; padding: 3px 10px; color: #465062">Codebook: <b style="color: #141922">v1.2, 3 Oct</b></span>
+<span style="font-size: 12px; border: 1px solid #dfe3ea; border-radius: 999px; padding: 3px 10px; color: #465062">Target journal: <b style="color: #141922">[journal]</b></span>
+</div>
+</section>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start">
+
+<section style="flex: 999 1 600px; min-width: 0; background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 18px 20px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap">
+<h2 style="margin: 0; font-size: 15px; font-weight: 600">Research questions</h2>
+<span style="font-size: 12px; color: #5d6675">Each question is answered by the codes linked to it</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; margin-top: 14px">
+<sc-for list="{{rqs}}" as="q" hint-placeholder-count="3">
+<article style="border: 1px solid #dfe3ea; border-radius: 8px; padding: 14px 16px">
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<span style="flex: none; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 500; background: #141922; color: #ffffff; border-radius: 4px; padding: 2px 7px">{{q.id}}</span>
+<div style="flex: 1; min-width: 0">
+<div style="font-family: 'IBM Plex Serif', Georgia, serif; font-size: 16px; line-height: 1.45">{{q.text}}</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px">
+<sc-for list="{{q.codes}}" as="c" hint-placeholder-count="2">
+<a href="Overview.dc.html" style="{{c.style}}">{{c.name}}</a>
+</sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-top: 10px; font-size: 12px; color: #465062">
+<span>{{q.passages}} passages</span>
+<span>{{q.docs}} of 35 documents contribute</span>
+<span style="display: inline-flex; align-items: center; gap: 6px">Verified <span style="width: 80px; height: 5px; background: #edf0f5; border-radius: 3px; display: inline-block"><span style="{{q.bar}}"></span></span> {{q.ver}}</span>
+</div>
+</div>
+</div>
+</article>
+</sc-for>
+</div>
+</section>
+
+<div style="flex: 1 1 340px; max-width: 440px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px 18px">
+<h2 style="margin: 0 0 10px; font-size: 15px; font-weight: 600">Team and roles</h2>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 13px">
+<li style="display: flex; gap: 10px; align-items: center"><span style="flex: none; width: 28px; height: 28px; border-radius: 50%; background: #2a78d6; color: #ffffff; display: grid; place-items: center; font-size: 11px; font-weight: 600">JT</span><span><b>Coder 1</b> · PI, codebook owner, reconciliation</span></li>
+<li style="display: flex; gap: 10px; align-items: center"><span style="flex: none; width: 28px; height: 28px; border-radius: 50%; background: #4a3aa7; color: #ffffff; display: grid; place-items: center; font-size: 11px; font-weight: 600">C2</span><span><b>Coder 2</b> · co-investigator, verifies the sample</span></li>
+<li style="display: flex; gap: 10px; align-items: center"><span style="flex: none; width: 28px; height: 28px; border-radius: 50%; background: #465062; color: #ffffff; display: grid; place-items: center; font-size: 11px; font-weight: 600">C</span><span><b>Claude</b> · first pass, [model], codebook v1.2</span></li>
+</ul>
+</section>
+
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px 18px">
+<h2 style="margin: 0 0 10px; font-size: 15px; font-weight: 600">Key links</h2>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: 13px">
+<li><a href="#">Protocol (OSF)</a></li>
+<li><a href="#">Codebook v1.2 and change log</a></li>
+<li><a href="#">Extraction form</a></li>
+<li><a href="#">Private data repository</a></li>
+<li><a href="#">Findings dashboard</a></li>
+<li style="color: #5d6675">Zenodo DOI · minted at first release</li>
+</ul>
+</section>
+
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px 18px">
+<h2 style="margin: 0 0 10px; font-size: 15px; font-weight: 600">Milestones</h2>
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; font-size: 13px">
+<sc-for list="{{milestones}}" as="m" hint-placeholder-count="6">
+<li style="display: flex; gap: 10px; padding: 6px 0; border-top: 1px solid #edf0f5">
+<span style="{{m.dot}}"></span>
+<span style="flex: 1">{{m.name}}</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5d6675">{{m.date}}</span>
+</li>
+</sc-for>
+</ol>
+</section>
+</div>
+</div>
+
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 18px 20px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap">
+<h2 style="margin: 0; font-size: 15px; font-weight: 600">PRISMA 2020 flow</h2>
+<span style="font-size: 12px; color: #5d6675">Numbers update from the screening export. Click a box to see the records behind it.</span>
+</div>
+<div style="overflow-x: auto; margin-top: 16px">
+<div style="min-width: 760px; max-width: 1080px; display: grid; grid-template-columns: 44px minmax(0, 1fr) 56px minmax(0, 1fr); column-gap: 12px; row-gap: 0; align-items: stretch">
+
+<div style="grid-column: 1; grid-row: 1; background: #141922; color: #ffffff; border-radius: 6px; display: grid; place-items: center"><span style="writing-mode: vertical-rl; transform: rotate(180deg); font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase">Identification</span></div>
+<button type="button" style="grid-column: 2; grid-row: 1; text-align: left; border: 1.5px solid #141922; background: #ffffff; border-radius: 6px; padding: 12px 14px; font-size: 13px; line-height: 1.5">Records identified from databases <b>(n = [n])</b><br>Records from the parent review <b>(n = [n])</b></button>
+<div style="grid-column: 3; grid-row: 1; display: grid; place-items: center"><svg width="48" height="12" viewBox="0 0 48 12" fill="none" stroke="#465062" stroke-width="1.6" aria-hidden="true"><path d="M2 6h42M38 1l6 5-6 5"></path></svg></div>
+<button type="button" style="grid-column: 4; grid-row: 1; text-align: left; border: 1px solid #c3c9d3; background: #f4f6f9; border-radius: 6px; padding: 12px 14px; font-size: 13px; line-height: 1.5">Removed before screening<br>Duplicates <b>(n = [n])</b><br>Outside the cognitive branch <b>(n = [n])</b></button>
+
+<div style="grid-column: 2; grid-row: 2; display: grid; place-items: center; height: 30px"><svg width="12" height="26" viewBox="0 0 12 26" fill="none" stroke="#465062" stroke-width="1.6" aria-hidden="true"><path d="M6 1v22M1 18l5 6 5-6"></path></svg></div>
+
+<div style="grid-column: 1; grid-row: 3 / span 5; background: #2a78d6; color: #ffffff; border-radius: 6px; display: grid; place-items: center"><span style="writing-mode: vertical-rl; transform: rotate(180deg); font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase">Screening</span></div>
+<button type="button" style="grid-column: 2; grid-row: 3; text-align: left; border: 1.5px solid #141922; background: #ffffff; border-radius: 6px; padding: 12px 14px; font-size: 13px">Records screened <b>(n = [n])</b></button>
+<div style="grid-column: 3; grid-row: 3; display: grid; place-items: center"><svg width="48" height="12" viewBox="0 0 48 12" fill="none" stroke="#465062" stroke-width="1.6" aria-hidden="true"><path d="M2 6h42M38 1l6 5-6 5"></path></svg></div>
+<button type="button" style="grid-column: 4; grid-row: 3; text-align: left; border: 1px solid #c3c9d3; background: #f4f6f9; border-radius: 6px; padding: 12px 14px; font-size: 13px">Records excluded <b>(n = [n])</b></button>
+
+<div style="grid-column: 2; grid-row: 4; display: grid; place-items: center; height: 30px"><svg width="12" height="26" viewBox="0 0 12 26" fill="none" stroke="#465062" stroke-width="1.6" aria-hidden="true"><path d="M6 1v22M1 18l5 6 5-6"></path></svg></div>
+
+<button type="button" style="grid-column: 2; grid-row: 5; text-align: left; border: 1.5px solid #141922; background: #ffffff; border-radius: 6px; padding: 12px 14px; font-size: 13px">Reports sought for retrieval <b>(n = [n])</b></button>
+<div style="grid-column: 3; grid-row: 5; display: grid; place-items: center"><svg width="48" height="12" viewBox="0 0 48 12" fill="none" stroke="#465062" stroke-width="1.6" aria-hidden="true"><path d="M2 6h42M38 1l6 5-6 5"></path></svg></div>
+<button type="button" style="grid-column: 4; grid-row: 5; text-align: left; border: 1px solid #c3c9d3; background: #f4f6f9; border-radius: 6px; padding: 12px 14px; font-size: 13px">Reports not retrieved <b>(n = [n])</b></button>
+
+<div style="grid-column: 2; grid-row: 6; display: grid; place-items: center; height: 30px"><svg width="12" height="26" viewBox="0 0 12 26" fill="none" stroke="#465062" stroke-width="1.6" aria-hidden="true"><path d="M6 1v22M1 18l5 6 5-6"></path></svg></div>
+
+<a href="Screen.dc.html" style="grid-column: 2; grid-row: 7; text-decoration: none; color: #141922; border: 1.5px solid #141922; background: #ffffff; border-radius: 6px; padding: 12px 14px; font-size: 13px; line-height: 1.5">Reports assessed for eligibility <b>(n = [n])</b><br><span style="color: #1c5cab; text-decoration: underline">Open full-text screening</span></a>
+<div style="grid-column: 3; grid-row: 7; display: grid; place-items: center"><svg width="48" height="12" viewBox="0 0 48 12" fill="none" stroke="#465062" stroke-width="1.6" aria-hidden="true"><path d="M2 6h42M38 1l6 5-6 5"></path></svg></div>
+<button type="button" style="grid-column: 4; grid-row: 7; text-align: left; border: 1px solid #c3c9d3; background: #f4f6f9; border-radius: 6px; padding: 12px 14px; font-size: 13px; line-height: 1.5">Reports excluded <b>(n = [n])</b><br>[Reason 1] (n = [n])<br>[Reason 2] (n = [n])<br>[Reason 3] (n = [n])</button>
+
+<div style="grid-column: 2; grid-row: 8; display: grid; place-items: center; height: 30px"><svg width="12" height="26" viewBox="0 0 12 26" fill="none" stroke="#465062" stroke-width="1.6" aria-hidden="true"><path d="M6 1v22M1 18l5 6 5-6"></path></svg></div>
+
+<div style="grid-column: 1; grid-row: 9; background: #1a7f57; color: #ffffff; border-radius: 6px; display: grid; place-items: center"><span style="writing-mode: vertical-rl; transform: rotate(180deg); font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase">Included</span></div>
+<a href="Document.dc.html" style="grid-column: 2; grid-row: 9; text-decoration: none; color: #141922; border: 2px solid #1a7f57; background: #e6f6ef; border-radius: 6px; padding: 12px 14px; font-size: 13px; line-height: 1.5">Reviews included <b>(n = [n])</b><br><span style="color: #1c5cab; text-decoration: underline">Open the document profiles</span></a>
+<div style="grid-column: 3; grid-row: 9; display: grid; place-items: center"><svg width="48" height="12" viewBox="0 0 48 12" fill="none" stroke="#465062" stroke-width="1.6" stroke-dasharray="3 3" aria-hidden="true"><path d="M2 6h42"></path></svg></div>
+<button type="button" style="grid-column: 4; grid-row: 9; text-align: left; border: 1.5px dashed #465062; background: #ffffff; border-radius: 6px; padding: 12px 14px; font-size: 13px; line-height: 1.5">Primary studies covered <b>(n = [n])</b><br>Overlap, corrected covered area <b>[x]%</b></button>
+</div>
+</div>
+</section>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1100}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var hue = { 'Prevalence': '#2a78d6', 'Assessment tools': '#eb6834', 'Aetiology': '#1baf7a', 'Service access': '#eda100', 'Equity framing': '#e87ba4', 'Housing context': '#4a3aa7' };
+    var chip = function (n) { return { name: n, style: 'text-decoration:none;color:#141922;font-size:12px;border:1px solid #dfe3ea;border-radius:4px;padding:2px 8px;box-shadow:inset 3px 0 0 ' + hue[n] }; };
+    var rqs = [
+      { id: 'RQ1', text: '[Question on how common cognitive impairment is, as reported across reviews]', codes: ['Prevalence', 'Housing context'], passages: 56, docs: 21, v: 40 },
+      { id: 'RQ2', text: '[Question on how cognitive impairment is identified and assessed]', codes: ['Assessment tools', 'Aetiology'], passages: 60, docs: 18, v: 30 },
+      { id: 'RQ3', text: '[Question on implications for services and equity]', codes: ['Service access', 'Equity framing'], passages: 31, docs: 14, v: 20 }
+    ].map(function (q) {
+      return { id: q.id, text: q.text, codes: q.codes.map(chip), passages: q.passages, docs: q.docs, ver: q.v + '%', bar: 'display:block;width:' + q.v + '%;height:5px;border-radius:3px;background:#1baf7a' };
+    });
+    var dot = function (c) { return 'flex:none;width:9px;height:9px;border-radius:50%;margin-top:5px;' + c; };
+    var milestones = [
+      { name: 'Protocol registered', date: '[date]', s: 'done' },
+      { name: 'Title and abstract screening', date: '[date]', s: 'done' },
+      { name: 'Full-text screening', date: '[date]', s: 'done' },
+      { name: 'Codebook v1.2 agreed', date: '2 Oct', s: 'done' },
+      { name: 'Claude first pass', date: '3 Oct', s: 'done' },
+      { name: 'Human coding and verification', date: 'Now', s: 'now' },
+      { name: 'Reconciliation and alpha', date: '[date]', s: 'next' },
+      { name: 'Draft manuscript', date: '[date]', s: 'next' }
+    ].map(function (m) {
+      var c = m.s === 'done' ? 'background:#1baf7a' : m.s === 'now' ? 'background:#2a78d6;box-shadow:0 0 0 3px #cfe1f7' : 'background:#ffffff;border:1.5px solid #8a93a3;box-sizing:border-box';
+      return { name: m.name, date: m.date, dot: dot(c) };
+    });
+    return { rqs: rqs, milestones: milestones };
+  }
+}
+</script>
+</body>
+</html>

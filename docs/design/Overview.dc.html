@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Overview and audit trail</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#f4f6f9;font-family:"IBM Plex Sans",system-ui,sans-serif;color:#141922}
+a{color:#1c5cab}a:hover{color:#123f78}
+button{font:inherit;cursor:pointer}
+</style>
+</helmet>
+<div style="min-height: 940px; display: flex; flex-direction: column; background: #f4f6f9; font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #141922">
+
+<header style="background: #ffffff; border-bottom: 1px solid #dfe3ea; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px">
+<div style="display: flex; align-items: center; gap: 10px">
+<div style="width: 28px; height: 28px; border-radius: 6px; background: #141922; display: grid; place-items: center">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#ffffff" stroke-width="1.6" aria-hidden="true"><path d="M3 4h10M3 8h6M3 12h8"></path></svg>
+</div>
+<div>
+<div style="font-weight: 700; font-size: 15px; letter-spacing: -0.01em">Review Coder</div>
+<div style="font-size: 12px; color: #5d6675">Cognitive impairment · review of reviews</div>
+</div>
+</div>
+<nav aria-label="Workspace" style="display: flex; gap: 4px; flex-wrap: wrap">
+<a href="Project.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Project</a>
+<a href="Document.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Documents</a>
+<a href="Screen.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Screen</a>
+<a href="Main.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Code</a>
+<a href="Verify.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Verify</a>
+<a href="Agreement.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Agreement</a>
+<a href="Overview.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; background: #141922; color: #ffffff; font-size: 14px; font-weight: 500">Overview</a>
+</nav>
+<div style="display: flex; gap: 8px; margin-left: auto; flex-wrap: wrap">
+<button type="button" style="border: 1px solid #dfe3ea; background: #ffffff; border-radius: 6px; padding: 7px 12px; font-size: 13px; min-height: 36px">Export REFI-QDA</button>
+<button type="button" style="border: 0; background: #141922; color: #ffffff; border-radius: 6px; padding: 7px 12px; font-size: 13px; min-height: 36px">Publish to dashboard</button>
+</div>
+</header>
+
+<div style="padding: 16px 24px 24px; display: flex; flex-direction: column; gap: 16px">
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px">
+<sc-for list="{{tiles}}" as="t" hint-placeholder-count="4">
+<div style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 14px 16px; display: flex; align-items: center; gap: 14px">
+<div style="{{t.ring}}"><div style="width: 40px; height: 40px; border-radius: 50%; background: #ffffff; display: grid; place-items: center; font-size: 12px; font-weight: 600">{{t.pct}}</div></div>
+<div>
+<div style="font-size: 13px; font-weight: 600">{{t.label}}</div>
+<div style="font-size: 12px; color: #465062; margin-top: 2px">{{t.sub}}</div>
+</div>
+</div>
+</sc-for>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start">
+
+<section style="flex: 999 1 640px; min-width: 0; background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; align-items: baseline">
+<h2 style="margin: 0; font-size: 14px; font-weight: 600">Documents × codes</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: #465062">
+<span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 3px; background: #2a78d6"></span>Confirmed by a coder</span>
+<span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 3px; background: repeating-linear-gradient(135deg, #ffffff 0 3px, #8a93a3 3px 4px); border: 1px solid #c3c9d3"></span>Claude only</span>
+<span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 3px; background: #edf0f5"></span>None</span>
+<span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 3px; background: #2a78d6; outline: 2px solid #1baf7a; outline-offset: 1px"></span>In verified sample</span>
+</div>
+</div>
+<p style="margin: 6px 0 12px; font-size: 12px; color: #5d6675">Numbers are passages. Click a cell to open them in the evidence drawer.</p>
+<div style="overflow-x: auto">
+<div style="min-width: 640px">
+<div style="display: grid; grid-template-columns: 200px repeat(6, minmax(0, 1fr)); gap: 3px; align-items: end">
+<div></div>
+<sc-for list="{{codes}}" as="c" hint-placeholder-count="6">
+<div style="font-size: 12px; color: #465062; text-align: center; padding-bottom: 6px; line-height: 1.2"><span style="{{c.swatch}}"></span><br>{{c.name}}</div>
+</sc-for>
+</div>
+<sc-for list="{{rows}}" as="r" hint-placeholder-count="10">
+<div style="display: grid; grid-template-columns: 200px repeat(6, minmax(0, 1fr)); gap: 3px; margin-top: 3px">
+<div style="font-size: 12px; display: flex; align-items: center; gap: 8px; padding-right: 8px"><span style="font-family: 'IBM Plex Mono', monospace; color: #5d6675">{{r.id}}</span><span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #141922">{{r.title}}</span></div>
+<sc-for list="{{r.cells}}" as="cell" hint-placeholder-count="6">
+<button type="button" aria-label="{{cell.aria}}" style="{{cell.style}}">{{cell.n}}</button>
+</sc-for>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section style="flex: 1 1 320px; max-width: 420px; min-width: 0; background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h2 style="margin: 0; font-size: 14px; font-weight: 600">Audit trail</h2>
+<span style="font-size: 12px; color: #5d6675">Append-only · in Git</span>
+</div>
+<p style="margin: 6px 0 12px; font-size: 12px; color: #5d6675; line-height: 1.45">Every decision is an event with who, what and when. Nothing is overwritten, so any past state can be restored.</p>
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+<sc-for list="{{events}}" as="e" hint-placeholder-count="8">
+<li style="display: flex; gap: 10px; padding: 9px 0; border-top: 1px solid #edf0f5">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5d6675; flex: none; width: 74px; padding-top: 1px">{{e.t}}</span>
+<span style="{{e.dot}}"></span>
+<span style="font-size: 13px; line-height: 1.4"><b>{{e.who}}</b> {{e.what}}</span>
+</li>
+</sc-for>
+</ol>
+<button type="button" style="margin-top: 10px; width: 100%; min-height: 40px; border: 1px solid #dfe3ea; background: #ffffff; border-radius: 8px; font-size: 13px">View full history</button>
+</section>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":940}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var ring = function (p, c) { return 'flex:none;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(' + c + ' 0 ' + p + '%, #edf0f5 ' + p + '% 100%)'; };
+    var tiles = [
+      { label: 'Claude first pass', sub: '35 of 35 documents', p: 100, c: '#465062' },
+      { label: 'Corpus coded by humans', sub: '22 of 35 documents', p: 62, c: '#2a78d6' },
+      { label: 'Sample verified', sub: '38 of 108 checks', p: 35, c: '#1baf7a' },
+      { label: 'Disagreements resolved', sub: '4 of 11', p: 36, c: '#eb6834' }
+    ].map(function (t) { return { label: t.label, sub: t.sub, pct: t.p + '%', ring: ring(t.p, t.c) }; });
+    var hues = ['#2a78d6', '#eb6834', '#1baf7a', '#eda100', '#e87ba4', '#4a3aa7'];
+    var names = ['Prevalence', 'Assessment tools', 'Aetiology', 'Service access', 'Equity framing', 'Housing context'];
+    var codes = names.map(function (n, i) { return { name: n, swatch: 'display:inline-block;width:10px;height:10px;border-radius:3px;background:' + hues[i] }; });
+    var grid = [
+      ['R01', '[Author Year] housing and memory', [3, 2, 1, 0, 0, 2], 'h', [1, 0, 0, 0, 0, 1]],
+      ['R02', '[Author Year] TBI in shelters', [2, 1, 4, 1, 0, 3], 'h', [0, 0, 1, 0, 0, 0]],
+      ['R03', '[Author Year] prevalence review', [5, 3, 2, 1, 0, 0], 'h', [1, 0, 0, 0, 0, 0]],
+      ['R04', '[Author Year] screening tools', [1, 6, 0, 2, 1, 0], 'c', [0, 0, 0, 0, 0, 0]],
+      ['R05', '[Author Year] ageing', [3, 1, 2, 2, 0, 1], 'c', [0, 0, 0, 0, 0, 0]],
+      ['R06', '[Author Year] service engagement', [0, 1, 0, 5, 2, 1], 'h', [0, 0, 0, 1, 0, 0]],
+      ['R07', '[Author Year] substance use', [2, 0, 3, 1, 0, 0], 'h', [0, 0, 1, 0, 0, 0]],
+      ['R08', '[Author Year] primary care access', [1, 2, 0, 4, 1, 0], 'h', [0, 1, 0, 1, 0, 0]],
+      ['R09', '[Author Year] Indigenous health', [1, 0, 1, 2, 4, 2], 'c', [0, 0, 0, 0, 0, 0]],
+      ['R10', '[Author Year] interventions', [0, 2, 0, 3, 1, 1], 'c', [0, 0, 0, 0, 0, 0]]
+    ];
+    var rows = grid.map(function (g) {
+      var cells = g[2].map(function (n, i) {
+        var base = 'min-height:34px;border:0;border-radius:4px;font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500;';
+        var st;
+        if (n === 0) st = base + 'background:#edf0f5;color:#8a93a3';
+        else if (g[3] === 'h') {
+          var a = Math.min(0.25 + n * 0.13, 1);
+          st = base + 'background:color-mix(in srgb,' + hues[i] + ' ' + Math.round(a * 100) + '%, #ffffff);color:' + (a > 0.6 ? '#ffffff' : '#141922');
+        } else st = base + 'background:repeating-linear-gradient(135deg,#ffffff 0 3px,#c3c9d3 3px 4px);color:#141922;border:1px solid #c3c9d3';
+        if (g[4][i]) st += ';outline:2px solid #1baf7a;outline-offset:1px';
+        return { n: n === 0 ? '' : String(n), style: st, aria: g[0] + ', ' + names[i] + ', ' + n + ' passages' };
+      });
+      return { id: g[0], title: g[1], cells: cells };
+    });
+    var dot = function (c) { return 'flex:none;width:8px;height:8px;border-radius:50%;margin-top:5px;background:' + c; };
+    var events = [
+      { t: '06 Oct 06:58', who: 'Coder 1', what: 'accepted Prevalence on R03 p. 4', c: '#2a78d6' },
+      { t: '06 Oct 06:53', who: 'Claude', what: 'replied to a comment on R03 p. 4', c: '#465062' },
+      { t: '06 Oct 06:41', who: 'Coder 2', what: 'disagreed with Equity framing on R11 p. 7', c: '#4a3aa7' },
+      { t: '06 Oct 06:40', who: 'Coder 2', what: 'agreed with Prevalence on R14 p. 9', c: '#4a3aa7' },
+      { t: '05 Oct 21:12', who: 'Coder 1', what: 'drew verification sample, 15%, seed 4821', c: '#2a78d6' },
+      { t: '05 Oct 21:05', who: 'Coder 1', what: 'recorded consensus Housing context on R02 p. 5', c: '#2a78d6' },
+      { t: '03 Oct 10:30', who: 'Claude', what: 'first pass on 35 documents, codebook v1.2', c: '#465062' },
+      { t: '02 Oct 16:02', who: 'Coder 1', what: 'published codebook v1.2', c: '#2a78d6' }
+    ].map(function (e) { return { t: e.t, who: e.who, what: e.what, dot: dot(e.c) }; });
+    return { tiles: tiles, codes: codes, rows: rows, events: events };
+  }
+}
+</script>
+</body>
+</html>

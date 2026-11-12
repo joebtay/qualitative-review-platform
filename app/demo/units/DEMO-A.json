@@ -1,0 +1,109 @@
+{
+ "doc": "DEMO-A",
+ "units": [
+  {
+   "id": "DEMO-A-p0001",
+   "kind": "paragraph",
+   "label": null,
+   "text": "One participant said the garden was the only place she felt calm all week. The garden opens on weekday mornings only, which excludes people who work.",
+   "page": "3",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-A-p0002",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Sessions are free, but tool hire was charged at the start of the project. Participants learned to propagate seedlings and to read a planting calendar.",
+   "page": "3",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-A-p0003",
+   "kind": "paragraph",
+   "label": null,
+   "text": "The garden shares a site with a primary school. Funding came from a three-year council grant that ends in March.",
+   "page": "3",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-A-p0004",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Sessions are free, but tool hire was charged at the start of the project.",
+   "page": "4",
+   "parent": null,
+   "flags": [
+    "merged"
+   ],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-A-p0005",
+   "kind": "paragraph",
+   "label": null,
+   "text": "The garden opens on weekday mornings only, which excludes people who work. Working in pairs built confidence in asking for help.",
+   "page": "4",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-A-p0006",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Sessions are free, but tool hire was charged at the start of the project. Participants learned to propagate seedlings and to read a planting calendar.",
+   "page": "4",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-A-p0007",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Participants learned to propagate seedlings and to read a planting calendar. Working in pairs built confidence in asking for help.",
+   "page": "5",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-A-p0008",
+   "kind": "paragraph",
+   "label": null,
+   "text": "The garden shares a site with a primary school. Two volunteers ran each session after a one-day training.",
+   "page": "5",
+   "parent": null,
+   "flags": [
+    "merged"
+   ],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-A-p0009",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Participants learned to propagate seedlings and to read a planting calendar. Attendance was linked to more walking each day.",
+   "page": "5",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-A-p0010",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Attendance was linked to more walking each day. The garden opens on weekday mornings only, which excludes people who work.",
+   "page": "6",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  }
+ ]
+}

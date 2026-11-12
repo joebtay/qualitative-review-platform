@@ -1,0 +1,109 @@
+{
+ "doc": "DEMO-D",
+ "units": [
+  {
+   "id": "DEMO-D-p0001",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Funding came from a three-year council grant that ends in March. Two volunteers ran each session after a one-day training.",
+   "page": "3",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-D-p0002",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Most participants reached the garden on foot; the nearest bus stop is 1.2 km away. Working in pairs built confidence in asking for help.",
+   "page": "3",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-D-p0003",
+   "kind": "paragraph",
+   "label": null,
+   "text": "One participant said the garden was the only place she felt calm all week. The garden opens on weekday mornings only, which excludes people who work.",
+   "page": "3",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-D-p0004",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Two volunteers ran each session after a one-day training. Most participants reached the garden on foot; the nearest bus stop is 1.2 km away.",
+   "page": "4",
+   "parent": null,
+   "flags": [
+    "merged"
+   ],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-D-p0005",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Attendance was linked to more walking each day. Most participants reached the garden on foot; the nearest bus stop is 1.2 km away.",
+   "page": "4",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-D-p0006",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Working in pairs built confidence in asking for help. Mean stress scores fell by 4 points over twelve weeks.",
+   "page": "4",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-D-p0007",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Funding came from a three-year council grant that ends in March. Participants learned to propagate seedlings and to read a planting calendar.",
+   "page": "5",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-D-p0008",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Sessions are free, but tool hire was charged at the start of the project. Working in pairs built confidence in asking for help.",
+   "page": "5",
+   "parent": null,
+   "flags": [
+    "merged"
+   ],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-D-p0009",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Mean stress scores fell by 4 points over twelve weeks. The garden opens on weekday mornings only, which excludes people who work.",
+   "page": "5",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-D-p0010",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Most participants reached the garden on foot; the nearest bus stop is 1.2 km away. Participants learned to propagate seedlings and to read a planting calendar.",
+   "page": "6",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  }
+ ]
+}

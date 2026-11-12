@@ -1,0 +1,109 @@
+{
+ "doc": "DEMO-B",
+ "units": [
+  {
+   "id": "DEMO-B-p0001",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Working in pairs built confidence in asking for help. Funding came from a three-year council grant that ends in March.",
+   "page": "3",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-B-p0002",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Most participants reached the garden on foot; the nearest bus stop is 1.2 km away. Attendance was linked to more walking each day.",
+   "page": "3",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-B-p0003",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Funding came from a three-year council grant that ends in March. Most participants reached the garden on foot; the nearest bus stop is 1.2 km away.",
+   "page": "3",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-B-p0004",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Most participants reached the garden on foot; the nearest bus stop is 1.2 km away. Two volunteers ran each session after a one-day training.",
+   "page": "4",
+   "parent": null,
+   "flags": [
+    "merged"
+   ],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-B-p0005",
+   "kind": "paragraph",
+   "label": null,
+   "text": "One participant said the garden was the only place she felt calm all week. Participants learned to propagate seedlings and to read a planting calendar.",
+   "page": "4",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-B-p0006",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Participants learned to propagate seedlings and to read a planting calendar. Two volunteers ran each session after a one-day training.",
+   "page": "4",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-B-p0007",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Two volunteers ran each session after a one-day training. Mean stress scores fell by 4 points over twelve weeks.",
+   "page": "5",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-B-p0008",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Attendance was linked to more walking each day. Funding came from a three-year council grant that ends in March.",
+   "page": "5",
+   "parent": null,
+   "flags": [
+    "merged"
+   ],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-B-p0009",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Participants learned to propagate seedlings and to read a planting calendar. The garden shares a site with a primary school.",
+   "page": "5",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  },
+  {
+   "id": "DEMO-B-p0010",
+   "kind": "paragraph",
+   "label": null,
+   "text": "Attendance was linked to more walking each day.",
+   "page": "6",
+   "parent": null,
+   "flags": [],
+   "excluded": false
+  }
+ ]
+}

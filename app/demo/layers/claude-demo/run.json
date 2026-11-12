@@ -1,0 +1,11 @@
+{
+ "layer": "claude-demo",
+ "kind": "claude",
+ "model": "demo",
+ "date": "2026-10-07",
+ "codebook_version": "demo",
+ "frames": [
+  "themes",
+  "attributes"
+ ]
+}

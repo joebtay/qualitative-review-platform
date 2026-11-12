@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Verify a sample</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#f4f6f9;font-family:"IBM Plex Sans",system-ui,sans-serif;color:#141922}
+a{color:#1c5cab}a:hover{color:#123f78}
+button{font:inherit;cursor:pointer}
+textarea,input,select{font:inherit}
+</style>
+</helmet>
+<div style="min-height: 940px; display: flex; flex-direction: column; background: #f4f6f9; font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #141922">
+
+<header style="background: #ffffff; border-bottom: 1px solid #dfe3ea; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px">
+<div style="display: flex; align-items: center; gap: 10px">
+<div style="width: 28px; height: 28px; border-radius: 6px; background: #141922; display: grid; place-items: center">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#ffffff" stroke-width="1.6" aria-hidden="true"><path d="M3 4h10M3 8h6M3 12h8"></path></svg>
+</div>
+<div>
+<div style="font-weight: 700; font-size: 15px; letter-spacing: -0.01em">Review Coder</div>
+<div style="font-size: 12px; color: #5d6675">Cognitive impairment · review of reviews</div>
+</div>
+</div>
+<nav aria-label="Workspace" style="display: flex; gap: 4px; flex-wrap: wrap">
+<a href="Project.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Project</a>
+<a href="Document.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Documents</a>
+<a href="Screen.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Screen</a>
+<a href="Main.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Code</a>
+<a href="Verify.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; background: #141922; color: #ffffff; font-size: 14px; font-weight: 500">Verify</a>
+<a href="Agreement.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Agreement</a>
+<a href="Overview.dc.html" style="text-decoration: none; padding: 7px 14px; border-radius: 6px; color: #465062; font-size: 14px; font-weight: 500">Overview</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 20px; margin-left: auto; flex-wrap: wrap">
+<div style="min-width: 170px">
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #465062"><span>Your sample verified</span><b style="color: #141922">18 / 54</b></div>
+<div style="height: 6px; background: #edf0f5; border-radius: 3px; margin-top: 4px"><div style="width: 33%; height: 6px; background: #1baf7a; border-radius: 3px"></div></div>
+</div>
+<div style="display: flex; align-items: center; gap: 6px; font-size: 12px; color: #7a4a00; background: #fff3dc; border: 1px solid #eab95a; border-radius: 999px; padding: 4px 10px">
+<span style="width: 7px; height: 7px; border-radius: 50%; background: #c98500"></span>Saved on this device · 1 change syncing
+</div>
+<div style="display: flex; align-items: center; gap: 8px">
+<div style="width: 30px; height: 30px; border-radius: 50%; background: #4a3aa7; color: #ffffff; display: grid; place-items: center; font-size: 12px; font-weight: 600">C2</div>
+<span style="font-size: 13px; color: #465062">Coder 2</span>
+</div>
+</div>
+</header>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px; padding: 16px 24px 24px; align-items: flex-start">
+
+<aside aria-label="Sampler" style="flex: 1 1 260px; max-width: 320px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px">
+<h2 style="margin: 0; font-size: 14px; font-weight: 600">Sampler</h2>
+<p style="margin: 6px 0 12px; font-size: 13px; color: #465062; line-height: 1.45">Draws a random sample of Claude's and Coder 1's coding for you to check. Locked once drawn, so the sample can be reported.</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+<label style="font-size: 12px; color: #5d6675">Sample size
+<select disabled style="display: block; width: 100%; margin-top: 4px; padding: 7px 8px; border: 1px solid #dfe3ea; border-radius: 6px; background: #f4f6f9; color: #141922"><option>15%</option></select>
+</label>
+<label style="font-size: 12px; color: #5d6675">Random seed
+<input type="text" value="4821" disabled style="display: block; width: 100%; box-sizing: border-box; margin-top: 4px; padding: 7px 8px; border: 1px solid #dfe3ea; border-radius: 6px; background: #f4f6f9; color: #141922; font-family: 'IBM Plex Mono', monospace">
+</label>
+</div>
+<label style="display: block; margin-top: 10px; font-size: 12px; color: #5d6675">Stratify by
+<select disabled style="display: block; width: 100%; margin-top: 4px; padding: 7px 8px; border: 1px solid #dfe3ea; border-radius: 6px; background: #f4f6f9; color: #141922"><option>Code and document</option></select>
+</label>
+<div style="margin-top: 12px; display: flex; align-items: center; gap: 8px; font-size: 12px; color: #465062; background: #f4f6f9; border-radius: 6px; padding: 8px 10px">
+<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="#465062" stroke-width="1.6" aria-hidden="true"><rect x="3" y="7" width="10" height="7" rx="1.5"></rect><path d="M5 7V5a3 3 0 0 1 6 0v2"></path></svg>
+Drawn 5 Oct by Coder 1 · 54 of 358 passages
+</div>
+</section>
+
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px">
+<h2 style="margin: 0 0 10px; font-size: 14px; font-weight: 600">Sample by code</h2>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<sc-for list="{{strata}}" as="s" hint-placeholder-count="6">
+<div>
+<div style="display: flex; justify-content: space-between; font-size: 13px"><span style="display: inline-flex; align-items: center; gap: 8px"><span style="{{s.swatch}}"></span>{{s.name}}</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #465062">{{s.label}}</span></div>
+<div style="height: 5px; background: #edf0f5; border-radius: 3px; margin-top: 4px"><div style="{{s.bar}}"></div></div>
+</div>
+</sc-for>
+</div>
+</section>
+</aside>
+
+<main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px">
+<div style="padding: 14px 22px; border-bottom: 1px solid #dfe3ea; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between">
+<div>
+<div style="font-size: 12px; color: #5d6675">Passage 19 of 54</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #465062; margin-top: 2px">R11 · [Author Year] · p. 7 · ¶3</div>
+</div>
+<div style="display: flex; gap: 8px">
+<button type="button" style="border: 1px solid #dfe3ea; background: #ffffff; border-radius: 6px; padding: 7px 12px; min-height: 36px">Previous</button>
+<button type="button" style="border: 1px solid #dfe3ea; background: #ffffff; border-radius: 6px; padding: 7px 12px; min-height: 36px">Skip for now</button>
+</div>
+</div>
+
+<div style="padding: 22px 28px; font-family: 'IBM Plex Serif', Georgia, serif; font-size: 17px; line-height: 1.75; max-width: 74ch">
+<span style="color: #8a93a3">Most included reviews drew on shelter-based samples in large urban centres. </span><mark style="background: rgba(232,123,164,0.22); color: #141922; padding: 2px 0; border-radius: 2px">None reported cognitive outcomes by gender, Indigenous identity or migration history, so the burden on groups already facing structural exclusion cannot be estimated</mark><span style="color: #8a93a3">. The authors recommend stratified reporting in future primary studies.</span>
+</div>
+
+<div style="margin: 0 22px; padding: 14px 16px; border: 1px solid #dfe3ea; border-radius: 8px; display: flex; flex-wrap: wrap; gap: 12px 24px">
+<div style="flex: 1 1 200px; min-width: 0">
+<div style="font-size: 12px; color: #5d6675">Code assigned</div>
+<div style="display: flex; align-items: center; gap: 8px; margin-top: 4px"><span style="width: 12px; height: 12px; border-radius: 3px; background: #e87ba4"></span><b style="font-size: 16px">Equity framing</b></div>
+<div style="font-size: 12px; color: #5d6675; margin-top: 4px">Assigned by Claude · accepted by Coder 1</div>
+</div>
+<div style="flex: 2 1 300px; min-width: 0; font-size: 13px; color: #465062; line-height: 1.5; border-left: 1px solid #dfe3ea; padding-left: 16px">
+<div style="font-weight: 600; color: #141922">Definition</div>
+Any statement about how findings differ, or cannot be assessed, across groups defined by structural disadvantage. <span style="color: #141922">Include</span> gaps in stratified reporting. <span style="color: #141922">Exclude</span> general calls for more research.
+</div>
+</div>
+
+<div style="padding: 18px 22px 10px">
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px">
+<button type="button" style="min-height: 56px; border: 0; background: #1a7f57; color: #ffffff; border-radius: 8px; font-weight: 600; font-size: 15px">Agree <kbd style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; opacity: 0.8; margin-left: 6px">A</kbd></button>
+<button type="button" style="min-height: 56px; border: 0; background: #b5361f; color: #ffffff; border-radius: 8px; font-weight: 600; font-size: 15px">Disagree <kbd style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; opacity: 0.8; margin-left: 6px">D</kbd></button>
+<button type="button" style="min-height: 56px; border: 1px solid #141922; background: #ffffff; color: #141922; border-radius: 8px; font-weight: 600; font-size: 15px">Other code <kbd style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #465062; margin-left: 6px">O</kbd></button>
+<button type="button" style="min-height: 56px; border: 1px solid #dfe3ea; background: #ffffff; color: #465062; border-radius: 8px; font-weight: 600; font-size: 15px">Unsure <kbd style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; margin-left: 6px">U</kbd></button>
+</div>
+<label style="display: block; margin-top: 14px; font-size: 12px; color: #5d6675">Note (optional, shown at reconciliation)
+<textarea rows="2" placeholder="What made you hesitate or disagree" style="display: block; width: 100%; box-sizing: border-box; margin-top: 4px; padding: 8px 10px; border: 1px solid #dfe3ea; border-radius: 6px; font-size: 13px; resize: vertical"></textarea>
+</label>
+</div>
+
+<div style="padding: 12px 22px 16px; font-size: 12px; color: #5d6675; display: flex; align-items: center; gap: 8px; border-top: 1px solid #edf0f5">
+<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="#5d6675" stroke-width="1.6" aria-hidden="true"><path d="M1.5 8s2.5-4.5 6.5-4.5S14.5 8 14.5 8s-2.5 4.5-6.5 4.5S1.5 8 1.5 8z"></path><path d="M3 13L13 3"></path></svg>
+Blinded: Coder 1's memos and Claude's rationale stay hidden until you finish the sample.
+</div>
+</section>
+</main>
+
+<aside aria-label="Session" style="flex: 1 1 260px; max-width: 320px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px">
+<h2 style="margin: 0 0 10px; font-size: 14px; font-weight: 600">This session</h2>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+<div style="background: #f4f6f9; border-radius: 8px; padding: 10px"><div style="font-size: 22px; font-weight: 600">14</div><div style="font-size: 12px; color: #465062">Agree</div></div>
+<div style="background: #f4f6f9; border-radius: 8px; padding: 10px"><div style="font-size: 22px; font-weight: 600">2</div><div style="font-size: 12px; color: #465062">Disagree</div></div>
+<div style="background: #f4f6f9; border-radius: 8px; padding: 10px"><div style="font-size: 22px; font-weight: 600">1</div><div style="font-size: 12px; color: #465062">Other code</div></div>
+<div style="background: #f4f6f9; border-radius: 8px; padding: 10px"><div style="font-size: 22px; font-weight: 600">1</div><div style="font-size: 12px; color: #465062">Unsure</div></div>
+</div>
+</section>
+
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px">
+<h2 style="margin: 0 0 10px; font-size: 14px; font-weight: 600">Comments on this passage</h2>
+<p style="margin: 0; font-size: 13px; color: #5d6675; line-height: 1.45">Hidden while blinded. Your own comments save now and appear to others after you finish.</p>
+<label style="display: block; margin-top: 12px; font-size: 12px; color: #5d6675">Add a comment
+<input type="text" placeholder="Visible after blinding ends" style="display: block; width: 100%; box-sizing: border-box; margin-top: 4px; padding: 8px 10px; border: 1px solid #dfe3ea; border-radius: 6px; font-size: 13px">
+</label>
+</section>
+
+<section style="background: #ffffff; border: 1px solid #dfe3ea; border-radius: 10px; padding: 16px">
+<h2 style="margin: 0 0 8px; font-size: 14px; font-weight: 600">Nothing is lost</h2>
+<p style="margin: 0; font-size: 13px; color: #465062; line-height: 1.5">Each click saves instantly on this device, then syncs to GitHub. Close the tab mid-sample and you resume at passage 19.</p>
+</section>
+</aside>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":940}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var sw = function (c) { return 'width:10px;height:10px;border-radius:3px;background:' + c; };
+    var bar = function (p) { return 'width:' + p + '%;height:5px;border-radius:3px;background:#1baf7a'; };
+    var strata = [
+      { name: 'Prevalence', done: 6, total: 12, c: '#2a78d6' },
+      { name: 'Assessment tools', done: 5, total: 10, c: '#eb6834' },
+      { name: 'Aetiology', done: 3, total: 9, c: '#1baf7a' },
+      { name: 'Service access', done: 2, total: 8, c: '#eda100' },
+      { name: 'Equity framing', done: 1, total: 7, c: '#e87ba4' },
+      { name: 'Housing context', done: 1, total: 8, c: '#4a3aa7' }
+    ].map(function (s) {
+      return { name: s.name, label: s.done + ' / ' + s.total, swatch: sw(s.c), bar: bar(Math.round(100 * s.done / s.total)) };
+    });
+    return { strata: strata };
+  }
+}
+</script>
+</body>
+</html>

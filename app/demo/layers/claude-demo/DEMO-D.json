@@ -1,0 +1,181 @@
+{
+ "layer": "claude-demo",
+ "doc": "DEMO-D",
+ "codes": {
+  "DEMO-D-p0001": {
+   "themes": {
+    "theme": {
+     "v": "Organisation",
+     "conf": 0.85,
+     "why": "Mainly about organisation."
+    },
+    "subtheme": "Funding"
+   },
+   "attributes": {
+    "voice": {
+     "v": "reported outcome",
+     "conf": 0.85,
+     "why": "Judged from the verbs and the speaker."
+    }
+   }
+  },
+  "DEMO-D-p0002": {
+   "themes": {
+    "theme": {
+     "v": "Access",
+     "conf": 0.71,
+     "why": "Mainly about access."
+    },
+    "subtheme": "Location and transport"
+   },
+   "attributes": {
+    "voice": {
+     "v": "participant view",
+     "conf": 0.71,
+     "why": "Judged from the verbs and the speaker."
+    }
+   }
+  },
+  "DEMO-D-p0003": {
+   "themes": {
+    "theme": {
+     "v": "Wellbeing",
+     "conf": 0.55,
+     "why": "Mainly about wellbeing."
+    },
+    "subtheme": null
+   },
+   "attributes": {
+    "voice": {
+     "v": "organiser view",
+     "conf": 0.55,
+     "why": "Judged from the verbs and the speaker."
+    }
+   }
+  },
+  "DEMO-D-p0004": {
+   "themes": {
+    "theme": {
+     "v": "Organisation",
+     "conf": 0.94,
+     "why": "Mainly about organisation."
+    },
+    "subtheme": "Funding"
+   },
+   "attributes": {
+    "voice": {
+     "v": "reported outcome",
+     "conf": 0.94,
+     "why": "Judged from the verbs and the speaker."
+    }
+   }
+  },
+  "DEMO-D-p0005": {
+   "themes": {
+    "theme": {
+     "v": "Wellbeing",
+     "conf": 0.88,
+     "why": "Mainly about wellbeing."
+    },
+    "subtheme": "Mood and stress"
+   },
+   "attributes": {
+    "voice": {
+     "v": "participant view",
+     "conf": 0.88,
+     "why": "Judged from the verbs and the speaker."
+    }
+   }
+  },
+  "DEMO-D-p0006": {
+   "themes": {
+    "theme": {
+     "v": "Skills",
+     "conf": 0.88,
+     "why": "Mainly about skills."
+    },
+    "subtheme": "Horticultural skills"
+   },
+   "attributes": {
+    "voice": {
+     "v": "organiser view",
+     "conf": 0.88,
+     "why": "Judged from the verbs and the speaker."
+    }
+   }
+  },
+  "DEMO-D-p0007": {
+   "themes": {
+    "theme": {
+     "v": "Organisation",
+     "conf": 0.98,
+     "why": "Mainly about organisation."
+    },
+    "subtheme": "Partnerships"
+   },
+   "attributes": {
+    "voice": {
+     "v": "reported outcome",
+     "conf": 0.98,
+     "why": "Judged from the verbs and the speaker."
+    }
+   }
+  },
+  "DEMO-D-p0008": {
+   "themes": {
+    "theme": {
+     "v": "Access",
+     "conf": 0.82,
+     "why": "Mainly about access."
+    },
+    "subtheme": "Location and transport"
+   },
+   "attributes": {
+    "voice": {
+     "v": "participant view",
+     "conf": 0.82,
+     "why": "Judged from the verbs and the speaker."
+    }
+   }
+  },
+  "DEMO-D-p0009": {
+   "themes": {
+    "theme": {
+     "v": "Wellbeing",
+     "conf": 0.88,
+     "why": "Mainly about wellbeing."
+    },
+    "subtheme": "Belonging"
+   },
+   "attributes": {
+    "voice": {
+     "v": "organiser view",
+     "conf": 0.88,
+     "why": "Judged from the verbs and the speaker."
+    }
+   }
+  },
+  "DEMO-D-p0010": {
+   "themes": {
+    "theme": {
+     "v": "Access",
+     "conf": 0.51,
+     "why": "Mainly about access."
+    },
+    "subtheme": "Opening hours"
+   },
+   "attributes": {
+    "voice": {
+     "v": "reported outcome",
+     "conf": 0.51,
+     "why": "Judged from the verbs and the speaker."
+    }
+   }
+  }
+ },
+ "notes": {
+  "DEMO-D-p0001": "Check against the neighbouring paragraph.",
+  "DEMO-D-p0006": "Check against the neighbouring paragraph."
+ },
+ "flags": {}
+}
